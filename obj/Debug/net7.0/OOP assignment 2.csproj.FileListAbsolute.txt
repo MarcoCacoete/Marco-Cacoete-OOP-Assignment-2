@@ -1,0 +1,30 @@
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/bin/Debug/net7.0/OOP assignment 2
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/bin/Debug/net7.0/OOP assignment 2.deps.json
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/bin/Debug/net7.0/OOP assignment 2.runtimeconfig.json
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/bin/Debug/net7.0/OOP assignment 2.dll
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/bin/Debug/net7.0/OOP assignment 2.pdb
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.csproj.AssemblyReference.cache
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.GeneratedMSBuildEditorConfig.editorconfig
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.AssemblyInfoInputs.cache
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.AssemblyInfo.cs
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.dll
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/refint/OOP assignment 2.dll
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.pdb
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache
+/home/marco/Desktop/Untitled Folder/OOP assignment 2/obj/Debug/net7.0/ref/OOP assignment 2.dll
+/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/OOP assignment 2
+/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/OOP assignment 2.deps.json
+/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/OOP assignment 2.runtimeconfig.json
+/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/OOP assignment 2.dll
+/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/OOP assignment 2.pdb
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.csproj.AssemblyReference.cache
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.GeneratedMSBuildEditorConfig.editorconfig
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.AssemblyInfoInputs.cache
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.AssemblyInfo.cs
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.dll
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/refint/OOP assignment 2.dll
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.pdb
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache
+/home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/ref/OOP assignment 2.dll
