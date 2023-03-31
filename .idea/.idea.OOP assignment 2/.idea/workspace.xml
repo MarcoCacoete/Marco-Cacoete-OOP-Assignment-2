@@ -4,16 +4,18 @@
     <projectFile>OOP assignment 2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="Re-commit">
-      <change afterPath="$PROJECT_DIR$/Test.cs" afterDir="false" />
+    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Card.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Messages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Messages.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Printing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Printing.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo and notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pseudo and notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" afterDir="false" />
@@ -37,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/marco/Documents/OOP/Assessment 2/Assignment",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/marco/Documents/OOP/Assessment 2/Assignment&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/home/marco/.var/app/com.jetbrains.Rider/config/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/home/marco/.var/app/com.jetbrains.Rider/config/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/home/marco/.var/app/com.jetbrains.Rider/data/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/marco/.var/app/com.jetbrains.Rider/config/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/home/marco/.var/app/com.jetbrains.Rider/config/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/home/marco/.var/app/com.jetbrains.Rider/data/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="OOP assignment 2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -83,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680223472738</updated>
-      <workItem from="1680223477704" duration="4521000" />
+      <workItem from="1680223477704" duration="4539000" />
+      <workItem from="1680294348121" duration="6606000" />
     </task>
     <task id="LOCAL-00001" summary="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours.">
       <created>1680223596264</created>
@@ -99,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680224311003</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Copied card and pack classes from assessment 1, copied deal methods to deal class, and prepared them to accept a cardpack list.">
+      <created>1680228198725</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680228198725</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +144,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours." />
     <MESSAGE value="Re-commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-commit" />
+    <MESSAGE value="Copied card and pack classes from assessment 1, copied deal methods to deal class, and prepared them to accept a cardpack list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Copied card and pack classes from assessment 1, copied deal methods to deal class, and prepared them to accept a cardpack list." />
   </component>
 </project>

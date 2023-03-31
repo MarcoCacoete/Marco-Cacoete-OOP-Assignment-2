@@ -34,7 +34,7 @@ public class Card
     }
 
     public override string
-        ToString() // Override for the tostring method used to return a string representation of card value and string. 
+        ToString() // Override for the to string method used to return a string representation of card value and string. 
     {
         string valueString;
         // Switch statements which depending on case assign different string value to valueString and suitString. 

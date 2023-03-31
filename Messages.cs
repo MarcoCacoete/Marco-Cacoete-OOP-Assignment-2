@@ -8,22 +8,22 @@ static class Messages
     {
         if (choice == 1)
         {
-            MessageT("Welcome to the math game",'g');
-            MessageT("This is gonna be fun dude teehee!",'b');
+            MessageT("Welcome to the math game",'g',0);
+            MessageT("This is gonna be fun dude teehee!",'b',0);
         }
         else
         {
-            MessageT("Goodbye my man" ,'r');
+            MessageT("Goodbye my man" ,'r',0);
         }
     }
     
-    private static void MessageT(string text,char colour)
+    private static void MessageT(string text,char colour,int Choice)
     {
-        Printing.PrintT(text,colour);
+        Printing.PrintT(text,colour,Choice);
     }
-    private static void MessageN(string text, char colour)
+    private static void MessageN(string text, char colour, int Choice)
     {
-        Printing.PrintT(text,colour);
+        Printing.PrintT(text,colour,Choice);
 
     }
 }

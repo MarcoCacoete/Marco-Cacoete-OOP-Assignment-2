@@ -7,54 +7,136 @@ public static class Printing
     //This class is responsible for printing.
 
 
-    public static void PrintT(string text, char colour)
+    public static void PrintT(string text, char colour,int LineNoLine)
     {
-        printer(text,colour);
-        
-    }
-    
-    public static void PrintN(int num, char colour)
-    {
-        printer(num,colour);
-        
-    }
-    private static void printer(string text, char colour)
-    {
-
-        if (colour == 'g')
+        if(LineNoLine ==0)
+            printer(text, colour, LineNoLine);
+        else
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(text);
-            Console.ForegroundColor = ConsoleColor.White;
-            return;
-
+            printer(text,colour,1);
         }
-        if (colour == 'b')
-        {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine(text);
-            Console.ForegroundColor = ConsoleColor.White;
-            return;
+    }
 
+    public static void PrintN(int num, char colour,int LineNoLine)
+    {
+        if(LineNoLine ==0)
+            printer(num, colour, LineNoLine);
+        else
+        {
+            printer(num,colour,1);
         }
-        if (colour == 'r')
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(text);
-            Console.ForegroundColor = ConsoleColor.White;
-            return;
+    }
 
+    private static void printer(string text, char colour,int LineNoLine)
+    {
+        if (LineNoLine == 0)
+        {
+            if (colour == 'g')
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(text);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'b')
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine(text);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'r')
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(text);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
         }
         else
         {
-            Console.WriteLine(text);
+            if (colour == 'g')
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write(text);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'b')
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write(text);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'r')
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write(text);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
         }
     }
-    
-    private static void printer(int num, char colour)
-    {
-        Console.WriteLine(num);
 
+    private static void printer(int number, char colour,int LineNoLine)
+    {
+        if (LineNoLine == 0)
+        {
+
+            if (colour == 'g')
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(number);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'b')
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine(number);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'r')
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(number);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+        }
+        else
+        {
+            if (colour == 'g')
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write(number);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'b')
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write(number);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+
+            if (colour == 'r')
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write(number);
+                Console.ForegroundColor = ConsoleColor.White;
+                return;
+            }
+        }
     }
-    
 }

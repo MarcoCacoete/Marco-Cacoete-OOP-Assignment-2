@@ -67,11 +67,14 @@ public class Deal
                     amount--;                                   // Decrements counter
                 }
                 Console.WriteLine("Your dealt cards so far.");
-
                 foreach (Card card in dealtCards)
                 {
                     Console.WriteLine(card.ToString());     // Prints all dealt cards
                 }
+                Console.WriteLine();
+                Tutorial.Instructions(dealtCards);
+
+                
             }
             catch (Exception)
             {
