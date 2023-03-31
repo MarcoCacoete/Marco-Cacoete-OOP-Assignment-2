@@ -1,0 +1,12 @@
+
+
+
+First idea for the math portion of the program for end user.
+
+Create a list with dealt cards, with either 3 or 5 like brief asks, read the card objects and use conditionals to check what operations to do.
+Carry out the operation immediately, and produce an int with result.
+Give user the chance to answer, compare their answer to answer already, calculated.
+Display information showing if user was right or not and solution.
+After this is all done, either add card objects back into shuffled pack or implement solution in a way that lets deal not actually remove from original list 
+but instead just copy into new list, so that the game can carry on indefinitely.
+
