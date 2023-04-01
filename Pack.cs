@@ -169,7 +169,7 @@ public class Pack
                 }
             }
 
-            foreach (Card card in cardPack)
+           /* foreach (Card card in cardPack)
             {
                 Console.WriteLine(card.ToString()); // Prints card pack
             }
@@ -177,7 +177,7 @@ public class Pack
             Console.WriteLine("I can shuffle now Dave");
             Console.WriteLine();
 
-            Console.WriteLine("Your shuffled pack above.");
+            Console.WriteLine("Your shuffled pack above.");*/
             
             Deal.dealer(2,5,cardPack);
         }

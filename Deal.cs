@@ -79,15 +79,12 @@ public class Deal
                     foreach (Card card in dealtCards)
                     {
                         cardPack.Add(card);
-                        dealtCards.Remove(card);
                     }
-
+                    dealtCards.Clear();
                     Deal.dealer(2,5,cardPack);
                     Printing.PrintT("Would you like to continue? (y/n)",'b',0);
                     choice = Console.ReadLine();
                 }
-
-
             }
             catch (Exception)
             {

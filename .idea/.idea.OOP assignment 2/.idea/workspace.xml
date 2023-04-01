@@ -4,16 +4,15 @@
     <projectFile>OOP assignment 2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="Somehow I think I got the core mechanic of the requested utility to work.&#10;&#10;Very early stages, &#10;&#10;Also got my printing system to work alright.">
-      <change afterPath="$PROJECT_DIR$/MathOps.cs" afterDir="false" />
+    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="Trying to use recursion to keep tutor going.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Messages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Messages.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo and notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pseudo and notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Printing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Printing.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" afterDir="false" />
@@ -89,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680223472738</updated>
       <workItem from="1680223477704" duration="4539000" />
-      <workItem from="1680294348121" duration="12853000" />
+      <workItem from="1680294348121" duration="20030000" />
     </task>
     <task id="LOCAL-00001" summary="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours.">
       <created>1680223596264</created>
@@ -119,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680301241262</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Trying to use recursion to keep tutor going.">
+      <created>1680307738455</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680307738455</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,56 +162,52 @@
     <MESSAGE value="Re-commit" />
     <MESSAGE value="Copied card and pack classes from assessment 1, copied deal methods to deal class, and prepared them to accept a cardpack list." />
     <MESSAGE value="Somehow I think I got the core mechanic of the requested utility to work.&#10;&#10;Very early stages, &#10;&#10;Also got my printing system to work alright." />
-    <option name="LAST_COMMIT_MESSAGE" value="Somehow I think I got the core mechanic of the requested utility to work.&#10;&#10;Very early stages, &#10;&#10;Also got my printing system to work alright." />
+    <MESSAGE value="Trying to use recursion to keep tutor going." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to use recursion to keep tutor going." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Deal.cs</url>
-          <line>75</line>
-          <properties documentPath="$PROJECT_DIR$/Deal.cs" initialLine="75" containingFunctionPresentation="method 'dealCard'">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>10</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="11" containingFunctionPresentation="method 'Instructions'">
             <startOffsets>
-              <option value="3344" />
+              <option value="237" />
             </startOffsets>
             <endOffsets>
-              <option value="3365" />
+              <option value="276" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Deal.cs</url>
-          <line>85</line>
-          <properties documentPath="$PROJECT_DIR$/Deal.cs" initialLine="85" containingFunctionPresentation="method 'dealCard'">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>11</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="12" containingFunctionPresentation="method 'Instructions'">
             <startOffsets>
-              <option value="3698" />
+              <option value="285" />
             </startOffsets>
             <endOffsets>
-              <option value="3757" />
+              <option value="307" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Deal.cs</url>
-          <line>64</line>
-          <properties documentPath="$PROJECT_DIR$/Deal.cs" initialLine="64" containingFunctionPresentation="method 'dealCard'">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>13</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="14" containingFunctionPresentation="method 'Instructions'">
             <startOffsets>
-              <option value="2837" />
+              <option value="330" />
             </startOffsets>
             <endOffsets>
-              <option value="2913" />
+              <option value="350" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="DotNetProject">
-        <watch expression="dealtCards" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

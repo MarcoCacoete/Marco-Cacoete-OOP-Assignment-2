@@ -9,6 +9,8 @@ static class Messages
         if (choice == 1)
         {
             MessageT("Welcome to the math game",'g',0);
+            Printing.PrintT("Maths is easy, let us help you, all you need to do is calculate the correct answer in your head or with pen and paper and enter it. Good luck! ", 'b',0);
+
             MessageT("This is gonna be fun dude teehee!",'b',0);
         }
         else
