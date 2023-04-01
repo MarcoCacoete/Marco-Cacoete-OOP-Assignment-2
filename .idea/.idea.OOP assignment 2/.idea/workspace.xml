@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MathOps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MathOps.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/OOP assignment 2.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +85,8 @@
       <workItem from="1680223477704" duration="4539000" />
       <workItem from="1680294348121" duration="20273000" />
       <workItem from="1680316208691" duration="284000" />
-      <workItem from="1680316689702" duration="468000" />
+      <workItem from="1680316689702" duration="625000" />
+      <workItem from="1680356508979" duration="7402000" />
     </task>
     <task id="LOCAL-00001" summary="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours.">
       <created>1680223596264</created>
@@ -124,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680315615649</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Still trying to fix skip.">
+      <created>1680317215777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680317215777</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,23 +176,154 @@
     <MESSAGE value="Somehow I think I got the core mechanic of the requested utility to work.&#10;&#10;Very early stages, &#10;&#10;Also got my printing system to work alright." />
     <MESSAGE value="Trying to use recursion to keep tutor going." />
     <MESSAGE value="Sometimes skips easy exercise call...not sure why, changed ints to doubles for division on easy, looking at data tables for hard exercise." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sometimes skips easy exercise call...not sure why, changed ints to doubles for division on easy, looking at data tables for hard exercise." />
+    <MESSAGE value="Still trying to fix skip." />
+    <option name="LAST_COMMIT_MESSAGE" value="Still trying to fix skip." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Tutorial.cs</url>
-          <line>8</line>
-          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="8" containingFunctionPresentation="method 'Instructions'">
+          <line>130</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="171" containingFunctionPresentation="method 'HardExercise'">
             <startOffsets>
-              <option value="148" />
+              <option value="3530" />
             </startOffsets>
             <endOffsets>
-              <option value="727" />
+              <option value="3607" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>135</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="174" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="3743" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3769" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>132</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="173" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="3625" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3694" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>91</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="132" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="2532" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2560" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>95</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="136" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="2619" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2647" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>99</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="140" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="2706" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2734" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>103</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="144" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="2793" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2821" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>107</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="148" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="2880" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2908" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>111</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="152" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="2967" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2995" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>115</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="156" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="3054" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3082" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tutorial.cs</url>
+          <line>119</line>
+          <properties documentPath="$PROJECT_DIR$/Tutorial.cs" initialLine="160" containingFunctionPresentation="method 'HardExercise'">
+            <startOffsets>
+              <option value="3141" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3169" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

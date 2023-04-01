@@ -2,8 +2,6 @@ namespace OOP_assignment_2;
 
 public class MathOps
 {
-    
-    
     public static int Add(int NumberOne, int NumberTwo)
     {
         int Result = NumberOne + NumberTwo;
