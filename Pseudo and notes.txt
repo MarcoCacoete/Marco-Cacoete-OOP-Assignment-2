@@ -10,3 +10,4 @@ Display information showing if user was right or not and solution.
 After this is all done, either add card objects back into shuffled pack or implement solution in a way that lets deal not actually remove from original list 
 but instead just copy into new list, so that the game can carry on indefinitely.
 
+To do the hard exercise, I need to create simple math operation methods so that depending on conditionals I can use the correct math operation.

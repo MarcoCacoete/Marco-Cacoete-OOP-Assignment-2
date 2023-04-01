@@ -179,7 +179,7 @@ public class Pack
 
             Console.WriteLine("Your shuffled pack above.");
             
-            Deal.dealer(2,3,cardPack);
+            Deal.dealer(2,5,cardPack);
         }
 
         //private encapsulated method for riffle shuffle based on real life steps with randomized card order

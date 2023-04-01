@@ -72,9 +72,22 @@ public class Deal
                     Console.WriteLine(card.ToString());     // Prints all dealt cards
                 }
                 Console.WriteLine();
-                Tutorial.Instructions(dealtCards);
+                string choice = "n";
+                while (choice == "n")
+                {
+                    Tutorial.Instructions(dealtCards);
+                    foreach (Card card in dealtCards)
+                    {
+                        cardPack.Add(card);
+                        dealtCards.Remove(card);
+                    }
 
-                
+                    Deal.dealer(2,5,cardPack);
+                    Printing.PrintT("Would you like to continue? (y/n)",'b',0);
+                    choice = Console.ReadLine();
+                }
+
+
             }
             catch (Exception)
             {
