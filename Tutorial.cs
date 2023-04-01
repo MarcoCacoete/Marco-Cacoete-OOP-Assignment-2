@@ -1,150 +1,27 @@
-using System.Data;
-using System.Net.Sockets;
-
 namespace OOP_assignment_2;
 
-public class Tutorial
+static class Tutorial
 {
-    public static void Instructions(List<Card> cards)
+    //Class responsible for the greeting messages and the goodbye messages.
+
+    public static void Message(int choice)
     {
-        try
+        if (choice == 1)
         {
+            Printing.PrintT("Hi I'm the math tutor, and I exist to help you be better at doing math!", 'g', 0);
             Console.WriteLine();
-            Printing.PrintT("Select difficulty please.", 'b', 0);
-            Printing.PrintT("1: Easy Exercise.", 'b', 0);
-            Printing.PrintT("2: Hard Exercise.", 'b', 0);
-
-            int Difficulty = Convert.ToInt32(Console.ReadLine());
-            if (Difficulty == 1)
-            {
-                EasyExercise(cards);
-            }
-
-            if (Difficulty == 2)
-            {
-                HardExercise(cards);
-            }
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-        }
-    }
-
-    private static void EasyExercise(List<Card> DealtCards)
-    {
-        string FirstNumber = Convert.ToString(DealtCards[0].Value);
-        string SecondNumber = Convert.ToString(DealtCards[2].Value);
-        string Operator1 = "";
-        double Result = 0;
-
-        if (DealtCards[1].Suit == 1)
-        {
-            Operator1 = "+";
-        }
-        if (DealtCards[1].Suit == 2)
-        {
-            Operator1 = "-";
-        }
-        if (DealtCards[1].Suit == 3)
-        {
-            Operator1 = "*";
-        }
-        if (DealtCards[1].Suit == 4)
-        {
-            Operator1 = "/";
-        }
-        
-
-        Printing.PrintT("What is the result of this operation?", 'g', 0);
-        Printing.PrintT(FirstNumber, 'r', 1);
-        Printing.PrintT(Operator1, 'b', 1);
-        Printing.PrintT(SecondNumber, 'r', 0);
-        
-        string expression = FirstNumber+Operator1+SecondNumber;
-        
-        Result = Convert.ToDouble(new DataTable().Compute(expression, null));
-        Result = Math.Round(Result,2);
-        Console.WriteLine(Result);
-
-        double Answer = Convert.ToDouble(Console.ReadLine());
-        
-        if (Answer == Result)
-        {
-            Printing.PrintT("You answered correctly!", 'g', 0);
-        }
-        else
-        {
-            Printing.PrintT("Sorry your answer is wrong, try again.", 'g', 0);
-            EasyExercise(DealtCards);
-        }
-    }
-
-    private static void HardExercise(List<Card> DealtCards)
-    {
-        string FirstNumber = Convert.ToString(DealtCards[0].Value);
-        string SecondNumber = Convert.ToString(DealtCards[2].Value);
-        string ThirdNUmber = Convert.ToString(DealtCards[4].Value);
-        string Operator1 = "";
-        string Operator2 = "";
-        double Result = 0;
-
-        if (DealtCards[1].Suit == 1)
-        {
-             Operator1 = "+";
-        }
-        if (DealtCards[1].Suit == 2)
-        {
-             Operator1 = "-";
-        }
-        if (DealtCards[1].Suit == 3)
-        {
-             Operator1 = "*";
-        }
-        if (DealtCards[1].Suit == 4)
-        {
-             Operator1 = "/";
-        }
-        if (DealtCards[3].Suit == 1)
-        {
-             Operator2 = "+";
-        }
-        if (DealtCards[3].Suit == 2)
-        {
-             Operator2 = "-";
-        }
-        if (DealtCards[3].Suit == 3)
-        {
-             Operator2 = "*";
-        }
-        if (DealtCards[3].Suit == 4)
-        {
-             Operator2 = "/";
+            Printing.PrintT("Math is easy, let me help you, all you need to do is calculate the correct answer in your head or with pen and paper and enter it. Good luck! ", 'g', 0);
+            Console.WriteLine();
+            Printing.PrintT("Please use 2 decimal places for division questions!",'r',0);
+            Console.WriteLine();
+            Printing.PrintT("This is gonna be fun!", 'g', 0);
+            Console.WriteLine();
         }
 
-        Printing.PrintT("What is the result of this operation?", 'g', 0);
-        Printing.PrintT(FirstNumber, 'r', 1);
-        Printing.PrintT(Operator1, 'b', 1);
-        Printing.PrintT(SecondNumber, 'r', 1);
-        Printing.PrintT(Operator2, 'b', 1);
-        Printing.PrintT(ThirdNUmber, 'r', 0);
-        string expression = FirstNumber+Operator1+SecondNumber+Operator2+ThirdNUmber;
-        
-        Result = Convert.ToDouble(new DataTable().Compute(expression, null));
-        Result = Math.Round(Result,2);
-
-        Console.WriteLine(Result);
-
-        double Answer = Convert.ToDouble(Console.ReadLine());
-        
-        if (Answer == Result)
+        if (choice == 2)
         {
-            Printing.PrintT("You answered correctly!", 'g', 0);
-        }
-        else
-        {
-            Printing.PrintT("Sorry your answer is wrong, try again.", 'g', 0);
-            HardExercise(DealtCards);
+            Printing.PrintT("See ya 'Genius'.", 'b', 0);
         }
     }
 }
+    

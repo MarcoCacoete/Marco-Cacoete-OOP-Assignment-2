@@ -44,7 +44,7 @@ public class Deal
                 string choice = "n";
                 while (choice == "n")
                 {
-                    Tutorial.Instructions(dealtCards);
+                    Test.Instructions(dealtCards);
                     foreach (Card card in dealtCards)
                     {
                         cardPack.Add(card);
