@@ -6,17 +6,27 @@ public class Tutorial
 {
     public static void Instructions(List<Card> cards)
     {
-        Console.WriteLine();
-        Printing.PrintT("Select difficulty please.",'b',0);
-        string Difficulty = Console.ReadLine();
-        if (Difficulty == "1")
+        try
         {
-            EasyExercise(cards);
-        }
+            Console.WriteLine();
+            Printing.PrintT("Select difficulty please.", 'b', 0);
+            Printing.PrintT("1: Easy Exercise.",'b',0);
+            Printing.PrintT("2: Hard Exercise.",'b',0);
 
-        if (Difficulty == "2")
+            int Difficulty = Convert.ToInt32(Console.ReadLine());
+            if (Difficulty == 1)
+            {
+                EasyExercise(cards);
+            }
+
+            if (Difficulty == 2)
+            {
+                HardExercise(cards);
+            }
+        }
+        catch(Exception e)
         {
-            HardExercise(cards);
+            Console.WriteLine(e);
         }
     }
 
