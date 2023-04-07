@@ -43,6 +43,7 @@ public class User
             student.Name = Console.ReadLine();
             student.LicenseType = "Student";
             student.Register(student.Name);
+            Test.UserName = student.Name;
         }
 
         if (License == "2")
@@ -55,6 +56,7 @@ public class User
             Printing.PrintT("Please insert license number: ", 'g', 0);
             professional.RegistrationNo = Convert.ToInt32(Console.ReadLine());
             professional.Register(professional.Name);
+            Test.UserName = professional.Name;
         }
         
         if (License == "3")
@@ -65,6 +67,7 @@ public class User
             tester.LicenseType = "Professional";
             Console.WriteLine();
             tester.Register(tester.Name);
+            Test.UserName = tester.Name;
         }
     }
 }

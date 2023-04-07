@@ -1,10 +1,18 @@
 using System.Data;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 
 namespace OOP_assignment_2;
 
 public class Test
 {
+    public static List<string> Stats = new List<string>();
+    public static double CorrectQuestions;
+    public static double WrongQuestions;
+
+    public static string UserName;
+
+
     //Entry point to tutorial methods, picks difficulty or exits program.
     public static void Instructions(List<Card> cards)
     {
@@ -35,6 +43,7 @@ public class Test
 
             if (Difficulty == 3)
             {
+                DataString(UserName, Percentage(CorrectQuestions, WrongQuestions));
                 Console.WriteLine();
                 Printing.PrintT("See ya 'Genius'.",'r',0);
                 Environment.Exit(0);
@@ -85,13 +94,18 @@ public class Test
             Console.WriteLine();
             Printing.PrintT("You answered correctly!", 'g', 0);           //If correct answer the program erases current dealt hand and recursively calls it again for a fresh exercise.
             Console.WriteLine();
+            CorrectQuestions++;
+            Percentage(CorrectQuestions, WrongQuestions);
         }
         else
         {
             Console.WriteLine();
             Printing.PrintT("Sorry your answer is wrong, try again.", 'g', 0); //In case of incorrect answer the program offers a chance of trying again to user, using same exercise.
+            WrongQuestions++;
+            Percentage(CorrectQuestions, WrongQuestions);
             EasyExercise(DealtCards);
             Console.WriteLine();
+            
         }
     }
         //Hard exercise method.
@@ -148,13 +162,39 @@ public class Test
             Console.WriteLine();
             Printing.PrintT("You answered correctly!", 'g', 0);
             Console.WriteLine();
+            CorrectQuestions++;
+            Percentage(CorrectQuestions, WrongQuestions);
         }
         else
         {
             Console.WriteLine();
             Printing.PrintT("Sorry your answer is wrong, try again.", 'g', 0);
+            WrongQuestions++;
+            Percentage(CorrectQuestions, WrongQuestions);
             HardExercise(DealtCards);
             Console.WriteLine();
         }
     }
+
+    public static string DataString(string UserName,double UserPercentage)
+    {
+        string UserStats = Convert.ToString(UserPercentage);
+        UserStats = UserName +" "+ UserStats;
+        Console.WriteLine(UserStats);
+        return UserStats;
+       // Stats.StatList(UserStats);
+    }
+
+    public static double Percentage(double Correct, double Wrong)
+    {
+        double Total = Correct + Wrong;
+        double FinalPercentage = Math.Round((Correct / Total)*100,1);
+        Console.WriteLine(Total);
+        Console.WriteLine(CorrectQuestions);
+        Console.WriteLine(WrongQuestions);
+        Console.WriteLine("Percentage of correct answers: "+FinalPercentage+"%");
+        return FinalPercentage;
+    }
+
+    
 }

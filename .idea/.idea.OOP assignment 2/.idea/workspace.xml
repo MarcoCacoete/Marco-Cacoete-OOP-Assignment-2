@@ -7,12 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="Inmplemented inherited classes student and professional, also implemented interface registration.">
-      <change afterPath="$PROJECT_DIR$/Statistics.cs" afterDir="false" />
+    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP assignment 2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OOP assignment 2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pseudo and notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pseudo and notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Statistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
@@ -45,31 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.41051313",
-    "last_opened_file_path": "/home/marco/Documents/OOP/Assessment 2/Assignment/Test.cs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.41051313&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/marco/Documents/OOP/Assessment 2/Assignment/Test.cs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/home/marco/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/marco/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/home/marco/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/home/marco/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="OOP assignment 2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -104,7 +103,8 @@
       <workItem from="1680316689702" duration="625000" />
       <workItem from="1680356508979" duration="12435000" />
       <workItem from="1680368990173" duration="876000" />
-      <workItem from="1680816396593" duration="16085000" />
+      <workItem from="1680816396593" duration="16556000" />
+      <workItem from="1680898545792" duration="10025000" />
     </task>
     <task id="LOCAL-00001" summary="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours.">
       <created>1680223596264</created>
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680825939810</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Trying to fit protected abstract classes into this app somewhere, some code added to notes txt with 1st attempt.&#10;&#10;Must try to create a data type with user name and their success percentage, as an abstract class at first then implement overrides and such.">
+      <created>1680834868941</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680834868941</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +226,8 @@
     <MESSAGE value="Math portion seems handled, can recursively call exercises depeding on right or wrong answer." />
     <MESSAGE value="Changed class names to match their function more closely. Adjusted printing results." />
     <MESSAGE value="Inmplemented inherited classes student and professional, also implemented interface registration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Inmplemented inherited classes student and professional, also implemented interface registration." />
+    <MESSAGE value="Trying to fit protected abstract classes into this app somewhere, some code added to notes txt with 1st attempt.&#10;&#10;Must try to create a data type with user name and their success percentage, as an abstract class at first then implement overrides and such." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to fit protected abstract classes into this app somewhere, some code added to notes txt with 1st attempt.&#10;&#10;Must try to create a data type with user name and their success percentage, as an abstract class at first then implement overrides and such." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
