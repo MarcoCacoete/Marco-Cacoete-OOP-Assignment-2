@@ -23,6 +23,7 @@ public class User
         get => LicenseType1;
         set => LicenseType1 = value;
     }
+    
 
     public static void Message()
     {
@@ -30,6 +31,8 @@ public class User
         Console.WriteLine();
         Printing.PrintT("1: Student.", 'g', 0);
         Printing.PrintT("2: Professional.", 'g', 0);
+        Printing.PrintT("3: Tester.", 'g', 0);
+
 
         string License = Console.ReadLine();
 
@@ -53,9 +56,20 @@ public class User
             professional.RegistrationNo = Convert.ToInt32(Console.ReadLine());
             professional.Register(professional.Name);
         }
+        
+        if (License == "3")
+        {
+            Tester tester = new Tester();
+            Printing.PrintT("Please register your name: ", 'g', 0);
+            tester.Name = Console.ReadLine();
+            tester.LicenseType = "Professional";
+            Console.WriteLine();
+            tester.Register(tester.Name);
+        }
     }
+}
 
-    interface IRegistration
+interface IRegistration
     {
         void Register(string Name);
     }
@@ -76,6 +90,22 @@ public class User
 
         }
     }
+public class Tester : Professional
+{
+    public void Register(string Name)
+    {
+        Console.WriteLine();
+        Printing.PrintT("Nice to meet you ",'b',1);
+        Printing.PrintT(Name,'g',1);
+        Printing.PrintT(".",'g',1);
+        Console.WriteLine();
+        Printing.PrintT("You're now registered as a tester, thanks for your help.", 'b', 0);
+        Console.WriteLine();
+        Printing.PrintT("Press Enter to continue.", 'g', 0);
+        Console.ReadLine();
+
+    }
+}
 
     public class Student : User, IRegistration
     {
@@ -92,7 +122,7 @@ public class User
             Console.ReadLine();
         }
     }
-}
+
  
 
 

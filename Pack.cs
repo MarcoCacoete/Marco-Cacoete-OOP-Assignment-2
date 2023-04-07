@@ -38,71 +38,15 @@ public class Pack
         // Creates random object
         private static Random rnd = new Random();
 
-        // Executes one of 3 methods to shuffle based on the type of shuffle
-        public static bool shuffleCardPack(int typeOfShuffle)
+        public static bool ShuffleCardPack()
         {
-
-            if (typeOfShuffle == 1)
-            {
-                fisherYates(); //used encapsulation on both shuffles
-            }
-
+            FisherYates();
             return true;
         }
-
-        private static List<Card> dealtCards = new List<Card>();
-        // Some objects are crated to be used by several methods
-        private static Card value;
-
-        public static void dealer(int dealChoice, int amount)  // Small card dealing method added that accepts referals from testing class to access encapsulated methods
-                                                               // depending on conditionals
-        {
-            if (dealChoice == 1)
-            {
-            }
-            if (dealChoice == 2)
-            {
-                dealCard(amount);
-            }
-        }
         
-        //Deals the number of cards specified by 'amount'
-        public static List<Card> dealCard(int amount)          // Similar method as above but with a counter equivalent to number of cards to deal
-        {
-            try
-            {
-                while (amount > 0)
-                {
-
-                    Card value = cardPack[0];                   // Creates a card with value matching the card at index 0 in cardPack
-
-                    cardPack.RemoveAt(0);                       // Removes card at same index in cardPack
-
-                    dealtCards.Add(value);                      // Adds card to dealt cards list
-
-                    amount--;                                   // Decrements counter
-                }
-                Console.WriteLine("Your dealt cards so far.");
-
-                foreach (Card card in dealtCards)
-                {
-                    Console.WriteLine(card.ToString());     // Prints all dealt cards
-                }
-            }
-            catch (Exception)
-            {
-                foreach (Card card in dealtCards)
-                {
-                    Console.WriteLine(card.ToString());     // Prints all dealt cards
-                }
-                Console.WriteLine("Your dealt cards so far.");
-                Console.WriteLine("No more cards to be dealt, goodbye Dave"); // Same idea as above for when all cards are dealt
-                Console.ReadLine();
-                Environment.Exit(0);
-            }
-            return dealtCards;
-        }
-        private static void fisherYates() //private encapsulated method for fisher yates shuffle
+        private static Card value;
+        
+        private static void FisherYates() //private encapsulated method for fisher yates shuffle
         {
             List<Card> check = new List<Card>();  // Creates a check list whose elements are used to cross check
 

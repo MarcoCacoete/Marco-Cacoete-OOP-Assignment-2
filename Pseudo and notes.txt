@@ -17,3 +17,48 @@ Idea: Try to implement ( and ) to change operation order, as an even harder diff
 
 
 Idea for interface, create a user class, then a pupil class, that inherits user class methods.
+
+
+
+
+
+namespace OOP_assignment_2;
+
+public abstract class Statistics
+{
+    protected abstract Class UserResult();
+    
+    protected abstract void ResultFile(int Percentage);
+    protected abstract void Save(List<int> Percentage);
+
+
+}
+
+public class Stats : Statistics
+{
+    protected override Class UserResult(String Name, int Percentage)
+    {
+        
+    }
+
+    protected override void ResultFile(int Percentage)
+    {
+        
+        List<int> PercentageList = new List<int>();
+        
+        
+        PercentageList.Add(Percentage);
+        Save(PercentageList);
+        
+    }
+    
+    protected override void Save(List<int> Percentage)
+    {
+        foreach (string i in Question)
+        {
+            
+        }
+    }
+    
+    
+}
