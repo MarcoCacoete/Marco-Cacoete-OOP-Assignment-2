@@ -8,6 +8,8 @@ public class Test
     //Entry point to tutorial methods, picks difficulty or exits program.
     public static void Instructions(List<Card> cards)
     {
+        
+
         try
         {
             Console.WriteLine();
@@ -16,6 +18,8 @@ public class Test
             Printing.PrintT("2: Hard Exercise.", 'b', 0);
             Console.WriteLine();
             Printing.PrintT("3: Exit.", 'r', 0);
+            
+            
 
 
             int Difficulty = Convert.ToInt32(Console.ReadLine());
@@ -68,9 +72,9 @@ public class Test
        
 
         Printing.PrintT("What is the result of this operation?", 'g', 0); //Prompt for exercise, using my printing methods class, that allows me to pick a text colour more easily.
-        Printing.PrintT(FirstNumber, 'r', 1);
-        Printing.PrintT(Operator1, 'b', 1);
-        Printing.PrintT(SecondNumber, 'r', 0);
+        Printing.PrintT(FirstNumber, 'b', 1);
+        Printing.PrintT(Operator1, 'r', 1);
+        Printing.PrintT(SecondNumber, 'b', 0);
         Console.WriteLine(Result);
 
 
@@ -128,11 +132,11 @@ public class Test
             Operator2 = "x";
 
         Printing.PrintT("What is the result of this operation?", 'g', 0);
-        Printing.PrintT(FirstNumber, 'r', 1);
-        Printing.PrintT(Operator1, 'b', 1);
-        Printing.PrintT(SecondNumber, 'r', 1);
-        Printing.PrintT(Operator2, 'b', 1);
-        Printing.PrintT(ThirdNUmber, 'r', 0);
+        Printing.PrintT(FirstNumber, 'b', 1);
+        Printing.PrintT(Operator1, 'r', 1);
+        Printing.PrintT(SecondNumber, 'b', 1);
+        Printing.PrintT(Operator2, 'r', 1);
+        Printing.PrintT(ThirdNUmber, 'b', 0);
        
 
         Console.WriteLine(Result);

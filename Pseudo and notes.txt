@@ -14,3 +14,6 @@ To do the hard exercise, I need to create simple math operation methods so that 
 
 
 Idea: Try to implement ( and ) to change operation order, as an even harder difficulty exercise.
+
+
+Idea for interface, create a user class, then a pupil class, that inherits user class methods.
