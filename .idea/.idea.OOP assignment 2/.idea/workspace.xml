@@ -9,13 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pseudo and notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pseudo and notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Statistics.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" afterDir="false" />
@@ -104,7 +104,9 @@
       <workItem from="1680356508979" duration="12435000" />
       <workItem from="1680368990173" duration="876000" />
       <workItem from="1680816396593" duration="16556000" />
-      <workItem from="1680898545792" duration="10025000" />
+      <workItem from="1680898545792" duration="10525000" />
+      <workItem from="1680971548068" duration="402000" />
+      <workItem from="1680975944980" duration="6304000" />
     </task>
     <task id="LOCAL-00001" summary="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours.">
       <created>1680223596264</created>
@@ -183,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680834868941</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implemented simple statistics, with percentages of correct answers with associated user name, tried to call methods in statistics class but failed cuz I'm not sure how to use protected classes and abstract ones yet, and can't set protected class method to static.">
+      <created>1680908841637</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680908841637</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +236,8 @@
     <MESSAGE value="Changed class names to match their function more closely. Adjusted printing results." />
     <MESSAGE value="Inmplemented inherited classes student and professional, also implemented interface registration." />
     <MESSAGE value="Trying to fit protected abstract classes into this app somewhere, some code added to notes txt with 1st attempt.&#10;&#10;Must try to create a data type with user name and their success percentage, as an abstract class at first then implement overrides and such." />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fit protected abstract classes into this app somewhere, some code added to notes txt with 1st attempt.&#10;&#10;Must try to create a data type with user name and their success percentage, as an abstract class at first then implement overrides and such." />
+    <MESSAGE value="Implemented simple statistics, with percentages of correct answers with associated user name, tried to call methods in statistics class but failed cuz I'm not sure how to use protected classes and abstract ones yet, and can't set protected class method to static." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented simple statistics, with percentages of correct answers with associated user name, tried to call methods in statistics class but failed cuz I'm not sure how to use protected classes and abstract ones yet, and can't set protected class method to static." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
