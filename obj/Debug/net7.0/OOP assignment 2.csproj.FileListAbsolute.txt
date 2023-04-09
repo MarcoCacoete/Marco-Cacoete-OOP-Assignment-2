@@ -29,3 +29,20 @@
 /home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache
 /home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/ref/OOP assignment 2.dll
 /home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\bin\Debug\net7.0\OOP assignment 2.exe
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\bin\Debug\net7.0\bin\Debug\net7.0\Statistics.txt
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\bin\Debug\net7.0\OOP assignment 2.deps.json
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\bin\Debug\net7.0\OOP assignment 2.runtimeconfig.json
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\bin\Debug\net7.0\OOP assignment 2.dll
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\bin\Debug\net7.0\OOP assignment 2.pdb
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.csproj.AssemblyReference.cache
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.AssemblyInfoInputs.cache
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.AssemblyInfo.cs
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.csproj.CoreCompileInputs.cache
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.dll
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\refint\OOP assignment 2.dll
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.pdb
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\OOP assignment 2.genruntimeconfig.cache
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\obj\Debug\net7.0\ref\OOP assignment 2.dll
+C:\Users\marco\RiderProjects\Marco-Cacoete-OOP-Assignment-2\bin\Debug\net7.0\bin\Debug\net7.0\Licenses.txt

@@ -74,6 +74,7 @@ public class User : IRegistration
             Console.WriteLine();
             EnterDetails();
         }
+        
 
         if (License == "1") 
         {
@@ -103,7 +104,7 @@ public class User : IRegistration
 
     interface IRegistration
     {
-       protected void Register(string name);
+       protected void Register(string Name);
     }
 
     public class Professional : User, IRegistration
@@ -119,20 +120,44 @@ public class User : IRegistration
                 Console.WriteLine();
                 Message();
             }
+            foreach(char i in Name)
+                if(!Char.IsLetter(i) &&  i != ' ' && !Char.IsPunctuation(i))
+            {
+                Printing.PrintT("No numerical values please!",'r',0);
+                Console.WriteLine();
+                Message();
+            }
+
+            LicenseCheck();
+            void LicenseCheck()
+            {
+                Console.WriteLine();
+
+                List<string> Licenses = File.ReadAllLines("Licenses.txt").ToList();
+                Printing.PrintT("List of valid license numbers, printed for testing", 'r', 0);
+                foreach (string i in Licenses)
+                    Printing.PrintT(i, 'b', 0);
+                Console.WriteLine();
+                Printing.PrintT("Please insert 8 digit license number: ", 'g', 0);
+                string RegistrationNo = Console.ReadLine();
+
+                if (!Licenses.Contains(RegistrationNo))
+                {
+                    Printing.PrintT("Enter Valid License key!", 'r', 0);
+                    LicenseCheck();
+                }
                 
-            LicenseType = "Professional";
-            Console.WriteLine();
-            Printing.PrintT("Please insert license number: ", 'g', 0);
-            RegistrationNo = Convert.ToInt32(Console.ReadLine());
-            Register(Name);
-            Test.UserName = Name;
+                LicenseType = "Professional";
+                Register(Name);
+                Test.UserName = Name;
+            }
         }
         private void Register(string name)
         {
             Console.WriteLine();
             Printing.PrintT("Nice to meet you ",'b',1);
             Printing.PrintT(name,'g',1);
-            Printing.PrintT(".",'g',1);
+            Printing.PrintT(".",'g',0);
             Console.WriteLine();
             Printing.PrintT("You're now registered as a professional user, enjoy your pro license.", 'b', 0);
             Console.WriteLine();
@@ -147,8 +172,20 @@ public class User : IRegistration
             
             Printing.PrintT("Please register your name: ", 'g', 0);
             Name = Console.ReadLine();
-            LicenseType = "Professional";
-            Console.WriteLine();
+            if (string.IsNullOrEmpty(Name))
+            {
+                Printing.PrintT("Enter Valid name!",'r',0);
+                Console.WriteLine();
+                Message();
+            }
+            foreach(char i in Name)
+                if(!Char.IsLetter(i) &&  i != ' ' && !Char.IsPunctuation(i))
+                {
+                    Printing.PrintT("No numerical values please!",'r',0);
+                    Console.WriteLine();
+                    Message();
+                }
+            LicenseType = "Tester";
             Register(Name);
             Test.UserName = Name;
             
@@ -176,6 +213,24 @@ public class User : IRegistration
             
             Printing.PrintT("Please register your name: ", 'g', 0);
             Name = Console.ReadLine();
+            if (string.IsNullOrEmpty(Name))
+            {
+                Printing.PrintT("Enter Valid name!",'r',0);
+                Console.WriteLine();
+                Message();
+            }
+
+            foreach (char i in Name)
+            {
+                if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
+                {
+                    Printing.PrintT("No numerical values please!", 'r', 0);
+                    Console.WriteLine();
+                    Message();
+                    return;
+                }
+            }
+
             LicenseType = "Student";
             Register(Name);
             Test.UserName = Name;
@@ -186,7 +241,7 @@ public class User : IRegistration
             Console.WriteLine();
             Printing.PrintT("Nice to meet you ",'b',1);
             Printing.PrintT(name,'g',1);
-            Printing.PrintT(".",'g',1);
+            Printing.PrintT(".",'g',0);
             Console.WriteLine();
             Printing.PrintT("You're registered as a student user, enjoy your free student license ", 'b', 0);
             Console.WriteLine();

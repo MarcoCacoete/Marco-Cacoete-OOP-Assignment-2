@@ -56,29 +56,41 @@ public class Exercises
         Printing.PrintT("Calculated answer: ",'b',1 );
         Printing.PrintD(Result,'r',0);
 
+        try
+        {
+            double Answer =
+                Math.Round(Convert.ToDouble(Console.ReadLine()),
+                    2); //Converts user input to be used in comparison below.
 
-        double Answer = Math.Round(Convert.ToDouble(Console.ReadLine()),2);                               //Converts user input to be used in comparison below.
-        
-        if (Answer == Result)
-        {
-            Console.WriteLine();
-            Printing.PrintT("You answered correctly!", 'g', 0);           //If correct answer the program erases current dealt hand and recursively calls it again for a fresh exercise.
-            Console.WriteLine();
-            CorrectQuestions++;
-            Statistics.Percentage(CorrectQuestions, WrongQuestions);
-            Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+            if (Answer == Result)
+            {
+                Console.WriteLine();
+                Printing.PrintT("You answered correctly!", 'g',
+                    0); //If correct answer the program erases current dealt hand and recursively calls it again for a fresh exercise.
+                Console.WriteLine();
+                CorrectQuestions++;
+                Statistics.Percentage(CorrectQuestions, WrongQuestions);
+                Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+            }
+            else
+            {
+                Console.WriteLine();
+                Printing.PrintT("Sorry your answer is wrong, try again.", 'g',
+                    0); //In case of incorrect answer the program offers a chance of trying again to user, using same exercise.
+                WrongQuestions++;
+                Console.WriteLine();
+                Statistics.Percentage(CorrectQuestions, WrongQuestions);
+                EasyExercise(dealtCards);
+                Console.WriteLine();
+                Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+
+            }
         }
-        else
+        catch
         {
+            Printing.PrintT("Enter Valid Option!",'r',0);
             Console.WriteLine();
-            Printing.PrintT("Sorry your answer is wrong, try again.", 'g', 0); //In case of incorrect answer the program offers a chance of trying again to user, using same exercise.
-            WrongQuestions++;
-            Console.WriteLine();
-            Statistics.Percentage(CorrectQuestions, WrongQuestions);
             EasyExercise(dealtCards);
-            Console.WriteLine();
-            Total(TotalAttempts, CorrectQuestions, WrongQuestions);
-            
         }
     }
         //Hard exercise method.
@@ -129,28 +141,36 @@ public class Exercises
         Printing.PrintT("This result is only shown for testing purposes. ",'r',0);
         Printing.PrintT("Calculated answer: ",'b',1 );
         Printing.PrintD(Result,'r',0);
-        
-        double Answer = Math.Round(Convert.ToDouble(Console.ReadLine()),2);
-        
-        if (Answer == Result)
+        try
         {
-            Console.WriteLine();
-            Printing.PrintT("You answered correctly!", 'g', 0);
-            Console.WriteLine();
-            CorrectQuestions++;
-            Statistics.Percentage(CorrectQuestions, WrongQuestions);
-            Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+            double Answer = Math.Round(Convert.ToDouble(Console.ReadLine()), 2);
+
+            if (Answer == Result)
+            {
+                Console.WriteLine();
+                Printing.PrintT("You answered correctly!", 'g', 0);
+                Console.WriteLine();
+                CorrectQuestions++;
+                Statistics.Percentage(CorrectQuestions, WrongQuestions);
+                Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+            }
+            else
+            {
+                Console.WriteLine();
+                Printing.PrintT("Sorry your answer is wrong, try again.", 'g', 0);
+                WrongQuestions++;
+                Console.WriteLine();
+                Statistics.Percentage(CorrectQuestions, WrongQuestions);
+                HardExercise(dealtCards);
+                Console.WriteLine();
+                Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+            }
         }
-        else
+        catch
         {
+            Printing.PrintT("Enter Valid Option!",'r',0);
             Console.WriteLine();
-            Printing.PrintT("Sorry your answer is wrong, try again.", 'g', 0);
-            WrongQuestions++;
-            Console.WriteLine();
-            Statistics.Percentage(CorrectQuestions, WrongQuestions);
             HardExercise(dealtCards);
-            Console.WriteLine();
-            Total(TotalAttempts, CorrectQuestions, WrongQuestions);
         }
     }
 }

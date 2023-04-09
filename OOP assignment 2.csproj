@@ -17,6 +17,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Content Include="bin\Debug\net7.0\Licenses.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
       <Content Include="bin\Debug\net7.0\Statistics.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>

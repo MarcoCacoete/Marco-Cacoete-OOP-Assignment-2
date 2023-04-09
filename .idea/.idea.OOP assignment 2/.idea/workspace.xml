@@ -7,30 +7,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercises.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP assignment 2.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
+    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="Did most error handling, found a problem when inputing user names with numbers mixed, it repeats a message call for some reason..">
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2023__01_52__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2023__01_52__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercises.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOP assignment 2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OOP assignment 2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Printing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Printing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shuffle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Statistics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/OOP assignment 2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +43,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Main" />
+      </map>
+    </option>
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -65,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.41051313",
+    "XThreadsFramesViewSplitterKey": "0.35947713",
     "last_opened_file_path": "/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/Statistics.txt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -77,9 +87,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/home/marco/.local/share/Symbols/src"
+      "C:\\Users\\marco\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\marco\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\marco\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -262,7 +272,8 @@
     <MESSAGE value="Trying to fit protected abstract classes into this app somewhere, some code added to notes txt with 1st attempt.&#10;&#10;Must try to create a data type with user name and their success percentage, as an abstract class at first then implement overrides and such." />
     <MESSAGE value="Implemented simple statistics, with percentages of correct answers with associated user name, tried to call methods in statistics class but failed cuz I'm not sure how to use protected classes and abstract ones yet, and can't set protected class method to static." />
     <MESSAGE value="Major breakthrough, managed to implement virtual methods, interfaces, intheritance, protected methods, and override in my users class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Major breakthrough, managed to implement virtual methods, interfaces, intheritance, protected methods, and override in my users class." />
+    <MESSAGE value="Did most error handling, found a problem when inputing user names with numbers mixed, it repeats a message call for some reason.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did most error handling, found a problem when inputing user names with numbers mixed, it repeats a message call for some reason.." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
