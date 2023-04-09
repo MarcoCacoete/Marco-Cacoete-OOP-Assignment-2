@@ -7,39 +7,39 @@ public static class Printing
     //This class is responsible for printing.
 
 
-    public static void PrintT(string text, char colour, int LineNoLine)
+    public static void PrintT(string text, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
-            printer(text, colour, LineNoLine);
+        if (lineNoLine == 0)
+            Printer(text, colour, lineNoLine);
         else
         {
-            printer(text, colour, 1);
+            Printer(text, colour, 1);
         }
     }
 
-    public static void PrintN(int num, char colour, int LineNoLine)
+    public static void PrintN(int num, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
-            printer(num, colour, LineNoLine);
+        if (lineNoLine == 0)
+            Printer(num, colour, lineNoLine);
         else
         {
-            printer(num, colour, 1);
+            Printer(num, colour, 1);
         }
     }
 
-    public static void PrintD(double num, char colour, int LineNoLine)
+    public static void PrintD(double num, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
-            printer(num, colour, LineNoLine);
+        if (lineNoLine == 0)
+            Printer(num, colour, lineNoLine);
         else
         {
-            printer(num, colour, 1);
+            Printer(num, colour, 1);
         }
     }
 
-    private static void printer(string text, char colour, int LineNoLine)
+    private static void Printer(string text, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
+        if (lineNoLine == 0)
         {
             if (colour == 'g')
             {
@@ -93,9 +93,9 @@ public static class Printing
         }
     }
 
-    private static void printer(int number, char colour, int LineNoLine)
+    private static void Printer(int number, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
+        if (lineNoLine == 0)
         {
 
             if (colour == 'g')
@@ -150,9 +150,9 @@ public static class Printing
         }
     }
 
-    private static void printer(double number, char colour, int LineNoLine)
+    private static void Printer(double number, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
+        if (lineNoLine == 0)
         {
 
             if (colour == 'g')

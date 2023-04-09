@@ -28,3 +28,4 @@
 /home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.pdb
 /home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache
 /home/marco/Documents/OOP/Assessment 2/Assignment/obj/Debug/net7.0/ref/OOP assignment 2.dll
+/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt

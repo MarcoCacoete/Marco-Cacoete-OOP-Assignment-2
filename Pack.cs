@@ -2,7 +2,7 @@ namespace OOP_assignment_2;
 
 public class Pack
 {
-        private static List<Card> cardPack = new List<Card>(); //encapsulation was used for this list of card objects
+        private static List<Card> _cardPack = new List<Card>(); //encapsulation was used for this list of card objects
         //constructor
         static Pack()
         {
@@ -24,10 +24,10 @@ public class Pack
 
                         packSize++;                                   // Counter iterator for packsize to stop operation when pack is complete
 
-                        cardPack.Add(new Card(suitCards, suit));      // Adds card objects to card list                     
+                        _cardPack.Add(new Card(suitCards, suit));      // Adds card objects to card list                     
                     }
                 }
-                foreach (Card card in cardPack)
+                foreach (Card card in _cardPack)
                 {
                     Console.WriteLine(card);
                 }
@@ -36,7 +36,7 @@ public class Pack
             }
         }
         // Creates random object
-        private static Random rnd = new Random();
+        private static Random _rnd = new Random();
 
         public static bool ShuffleCardPack()
         {
@@ -44,7 +44,7 @@ public class Pack
             return true;
         }
         
-        private static Card value;
+        private static Card _value;
         
         private static void FisherYates() //private encapsulated method for fisher yates shuffle
         {
@@ -54,23 +54,23 @@ public class Pack
 
             while (check.Count < 52)              // Runs code until it fills check list 
             {
-                int r = rnd.Next(cardPack.Count); // Picks random index from card list
+                int r = _rnd.Next(_cardPack.Count); // Picks random index from card list
 
-                var value = cardPack[r];         // Gives variable its card value
+                var value = _cardPack[r];         // Gives variable its card value
 
                 if (!check.Contains(value))      // Checks check list to see it has been added already if it has it skips it
                 {
 
-                    cardPack.RemoveAt(r);        // Removes card at index r
+                    _cardPack.RemoveAt(r);        // Removes card at index r
 
                     check.Add(value);            // Proceeds to add it to cardPack list
 
-                    cardPack.Add(value);         // Proceeds to add it to end of cardPack list
+                    _cardPack.Add(value);         // Proceeds to add it to end of cardPack list
 
                     counter++;                   // Counter increases by 1
                 }
             }
-            Deal.dealer(2,5,cardPack);
+            Deal.Dealer(2,5,_cardPack);
         }
     }
     

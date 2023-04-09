@@ -8,14 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Exercises.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP assignment 2.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Deal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP assignment 2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OOP assignment 2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Printing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Printing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shuffle.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Statistics.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/OOP assignment 2.dll" afterDir="false" />
@@ -39,36 +50,39 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2Nl0gB1JU5gk6lvNInqNdVOjho8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.41051313&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/marco/Documents/OOP/Assessment 2/Assignment/Test.cs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.41051313",
+    "last_opened_file_path": "/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/Statistics.txt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/home/marco/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
-      &quot;/home/marco/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
-      &quot;/home/marco/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/home/marco/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="OOP assignment 2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -106,7 +120,9 @@
       <workItem from="1680816396593" duration="16556000" />
       <workItem from="1680898545792" duration="10525000" />
       <workItem from="1680971548068" duration="402000" />
-      <workItem from="1680975944980" duration="6304000" />
+      <workItem from="1680975944980" duration="6538000" />
+      <workItem from="1680984150552" duration="9456000" />
+      <workItem from="1680996993362" duration="3124000" />
     </task>
     <task id="LOCAL-00001" summary="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours.">
       <created>1680223596264</created>
@@ -192,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680908841637</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Major breakthrough, managed to implement virtual methods, interfaces, intheritance, protected methods, and override in my users class.">
+      <created>1680982462274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680982462275</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +247,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours." />
     <MESSAGE value="Re-commit" />
@@ -237,7 +261,8 @@
     <MESSAGE value="Inmplemented inherited classes student and professional, also implemented interface registration." />
     <MESSAGE value="Trying to fit protected abstract classes into this app somewhere, some code added to notes txt with 1st attempt.&#10;&#10;Must try to create a data type with user name and their success percentage, as an abstract class at first then implement overrides and such." />
     <MESSAGE value="Implemented simple statistics, with percentages of correct answers with associated user name, tried to call methods in statistics class but failed cuz I'm not sure how to use protected classes and abstract ones yet, and can't set protected class method to static." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented simple statistics, with percentages of correct answers with associated user name, tried to call methods in statistics class but failed cuz I'm not sure how to use protected classes and abstract ones yet, and can't set protected class method to static." />
+    <MESSAGE value="Major breakthrough, managed to implement virtual methods, interfaces, intheritance, protected methods, and override in my users class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Major breakthrough, managed to implement virtual methods, interfaces, intheritance, protected methods, and override in my users class." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

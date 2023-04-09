@@ -2,33 +2,33 @@ namespace OOP_assignment_2;
 
 public class User : IRegistration
 {
-    private string Name1;
-    private int RegistrationNo1;
-    private string LicenseType1;
+    private string _name1;
+    private int _registrationNo1;
+    private string _licenseType1;
 
     public string Name
     {
-        get => Name1;
-        set => Name1 = value;
+        get => _name1;
+        set => _name1 = value;
     }
 
     public int RegistrationNo
     {
-        get => RegistrationNo1;
-        set => RegistrationNo1 = value;
+        get => _registrationNo1;
+        set => _registrationNo1 = value;
     }
 
     public string LicenseType
     {
-        get => LicenseType1;
-        set => LicenseType1 = value;
+        get => _licenseType1;
+        set => _licenseType1 = value;
     }
     
-    public void Register(string Name)
+    public void Register(string name)
     {
         Console.WriteLine();
         Printing.PrintT("Nice to meet you ",'b',1);
-        Printing.PrintT(Name,'g',1);
+        Printing.PrintT(name,'g',1);
         Printing.PrintT(".",'g',1);
         Console.WriteLine();
         Printing.PrintT("You're now registered as a user, enjoy your experience.", 'b', 0);
@@ -49,16 +49,33 @@ public class User : IRegistration
     }
     public static void EnterDetails()
     {
+        Printing.PrintT("Welcome to the Math Tutor, please enter your details.", 'b', 0);
+        Console.WriteLine();
         Printing.PrintT("Are you a student user or professional user?", 'b', 0);
         Console.WriteLine();
         Printing.PrintT("1: Student.", 'g', 0);
         Printing.PrintT("2: Professional.", 'g', 0);
-        Printing.PrintT("3: Tester.", 'g', 0);
+        Printing.PrintT("3: Tester - Temporary test user.", 'r', 0);
+        Console.WriteLine();
+        Printing.PrintT("4: Exit.", 'r', 0);
 
+       
 
         string License = Console.ReadLine();
+        
+        List<string> Check = new List<string>()
+        {
+            "1","2","3","4"
+        };
 
-        if (License == "1")
+        if (!Check.Contains(License))
+        {
+            Printing.PrintT("Enter Valid Option!",'r',0);
+            Console.WriteLine();
+            EnterDetails();
+        }
+
+        if (License == "1") 
         {
             Student student = new Student();
             student.Message();
@@ -75,12 +92,18 @@ public class User : IRegistration
             Tester tester = new Tester();
             tester.Message();
         }
+        if (License == "4")
+        {
+            Console.WriteLine();
+            Printing.PrintT("See ya Maths Wizard.",'r',0);
+            Environment.Exit(0);
+        }
     }
 }
 
     interface IRegistration
     {
-       protected void Register(string Name);
+       protected void Register(string name);
     }
 
     public class Professional : User, IRegistration
@@ -90,6 +113,13 @@ public class User : IRegistration
             
             Printing.PrintT("Please register your name: ", 'g', 0);
             Name = Console.ReadLine();
+            if (string.IsNullOrEmpty(Name))
+            {
+                Printing.PrintT("Enter Valid name!",'r',0);
+                Console.WriteLine();
+                Message();
+            }
+                
             LicenseType = "Professional";
             Console.WriteLine();
             Printing.PrintT("Please insert license number: ", 'g', 0);
@@ -97,23 +127,21 @@ public class User : IRegistration
             Register(Name);
             Test.UserName = Name;
         }
-        private void Register(string Name)
+        private void Register(string name)
         {
             Console.WriteLine();
             Printing.PrintT("Nice to meet you ",'b',1);
-            Printing.PrintT(Name,'g',1);
+            Printing.PrintT(name,'g',1);
             Printing.PrintT(".",'g',1);
             Console.WriteLine();
             Printing.PrintT("You're now registered as a professional user, enjoy your pro license.", 'b', 0);
             Console.WriteLine();
             Printing.PrintT("Press Enter to continue.", 'g', 0);
             Console.ReadLine();
-
         }
     }
     public class Tester : User
     {
-
         protected override void Message()
         {
             
@@ -126,11 +154,11 @@ public class User : IRegistration
             
         }
 
-        private void Register(string Name)
+        private void Register(string name)
         {
             Console.WriteLine();
             Printing.PrintT("Nice to meet you ",'b',1);
-            Printing.PrintT(Name,'g',1);
+            Printing.PrintT(name,'g',1);
             Printing.PrintT(".",'g',1);
             Console.WriteLine();
             Printing.PrintT("You're now registered as a tester, thanks for your help.", 'b', 0);
@@ -153,11 +181,11 @@ public class User : IRegistration
             Test.UserName = Name;
         }
 
-        private void Register(string Name)
+        private void Register(string name)
         {
             Console.WriteLine();
             Printing.PrintT("Nice to meet you ",'b',1);
-            Printing.PrintT(Name,'g',1);
+            Printing.PrintT(name,'g',1);
             Printing.PrintT(".",'g',1);
             Console.WriteLine();
             Printing.PrintT("You're registered as a student user, enjoy your free student license ", 'b', 0);

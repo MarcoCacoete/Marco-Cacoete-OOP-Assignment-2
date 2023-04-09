@@ -12,4 +12,14 @@
       <Compile Remove="Shuffle.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Statistics.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="bin\Debug\net7.0\Statistics.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
