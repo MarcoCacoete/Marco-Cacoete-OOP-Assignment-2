@@ -1,19 +1,19 @@
 using System.Data;
 
 namespace OOP_assignment_2;
-
+//Class with the Tutor exercises.
 public class Exercises
 {
-    public static double CorrectQuestions;
+    public static double CorrectQuestions;      //Some variables are delcared to be of use below.
     public static double WrongQuestions;
     public static double TotalAttempts;
-
+    //Small method update total number of attempts.
     public static double Total(double total,double correct, double wrong)
     {
         TotalAttempts = correct + wrong;
         return TotalAttempts;
     }
-
+    //Method that defines difficulty of exercises.
     public static void Difficulty(int option,List<Card> dealtCards)
     {
         if (option==1)
@@ -21,7 +21,7 @@ public class Exercises
         if (option==2)
             HardExercise(dealtCards);
     }
-
+    //Method for easy exercise.
     private static void EasyExercise(List<Card> dealtCards)
     {
         string FirstNumber = Convert.ToString(dealtCards[0].Value);     //Takes either numerical value or suit from card objects, and assigns to string variables.
@@ -29,7 +29,7 @@ public class Exercises
         string Operator1 = "";
         double Result = 0;
 
-        if (dealtCards[1].Suit == 1)                                    //Solution for determining what type of operation to execute.
+        if (dealtCards[1].Suit == 1)                                    //Solution for determining what type of operation to execute using conditionals.
             Operator1 = "+";
         if (dealtCards[1].Suit == 2)
             Operator1 = "-";
@@ -40,14 +40,14 @@ public class Exercises
         
         string expression = FirstNumber+Operator1+SecondNumber;         //Simple concatenation of strings representing the operation to be calculated.
         
-        Result = Math.Round(Convert.ToDouble(new DataTable().Compute(expression, null)),2);   //Using Datatable method, it's possible to interpret the string expression and produce a result.
+        Result = Math.Round(Convert.ToDouble(new DataTable().Compute(expression, null)),2);   //Using Datatable method, it's possible to interpret the string expression as a math operation and produce a result.
                                                                                                    //Rounded double result to account for division.
         
         if(dealtCards[1].Suit == 3)                                                  //Overwrites multiplication operation * string to x to be able to print a better symbol to the user below.
             Operator1 = "x";
 
         Console.WriteLine();
-        Printing.PrintT("What is the result of this operation?", 'g', 0); //Prompt for exercise, using my printing methods class, that allows me to pick a text colour more easily.
+        Printing.PrintT("What is the result of this operation?", 'g', 0); //Prompt for exercise, using my printing methods class which allows me to pick a text colour more easily.
         Printing.PrintT(FirstNumber, 'b', 1);
         Printing.PrintT(Operator1, 'r', 1);
         Printing.PrintT(SecondNumber, 'b', 0);
@@ -56,11 +56,9 @@ public class Exercises
         Printing.PrintT("Calculated answer: ",'b',1 );
         Printing.PrintD(Result,'r',0);
 
-        try
+        try                                                                 // Try catch method for error handling
         {
-            double Answer =
-                Math.Round(Convert.ToDouble(Console.ReadLine()),
-                    2); //Converts user input to be used in comparison below.
+            double Answer = Math.Round(Convert.ToDouble(Console.ReadLine()), 2); //Converts user input to be used in comparison below, answer is formatted so that it matches calculated answer if user enters 2 decimals.
 
             if (Answer == Result)
             {
@@ -76,7 +74,7 @@ public class Exercises
             {
                 Console.WriteLine();
                 Printing.PrintT("Sorry your answer is wrong, try again.", 'g',
-                    0); //In case of incorrect answer the program offers a chance of trying again to user, using same exercise.
+                    0); //In case of incorrect answer the program offers user another chance, using same exercise.
                 WrongQuestions++;
                 Console.WriteLine();
                 Statistics.Percentage(CorrectQuestions, WrongQuestions);

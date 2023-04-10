@@ -6,14 +6,11 @@ namespace OOP_assignment_2;
 
 public class Test
 {
-    
     public static string UserName;
-
-
     //Entry point to test methods, picks difficulty or exits program.
     public static void Instructions(List<Card> cards)
     {
-        try
+        try                                                         //Try catch method for error handling.
         {
             Console.WriteLine();
             Printing.PrintT("Please select difficulty.", 'b', 0);  //Options to pick from.
@@ -36,17 +33,17 @@ public class Test
                 Exercises.Difficulty(2,cards);
             }
 
-            if (Difficulty == 3)
-            {
-                Exercises.TotalAttempts = Exercises.CorrectQuestions + Exercises.WrongQuestions;
+            if (Difficulty == 3)        // This conditional option terminates the program gracefully, before doing so it makes calls to calculate statistics and writing results to a file.
+            {                           // It also includes a friendly message directed at user before exiting program.
+                Exercises.TotalAttempts = Exercises.CorrectQuestions + Exercises.WrongQuestions; //Updates total attempts made so far.
                 Statistics.DataString(UserName, Statistics.Percentage(Exercises.CorrectQuestions, Exercises.WrongQuestions),Exercises.TotalAttempts);
                 Console.WriteLine();
-                Printing.PrintT("See ya Maths Wizard.",'r',0);
-                Environment.Exit(0);
+                Printing.PrintT("See ya Maths Wizard.",'r',0); //Friendly flavour message for user.
+                Environment.Exit(0);   //Exits program.
             }
         }
         catch (Exception)
-        {
+        {                           // This catch recursively calls Instructions method with same hand of cards dealt in case of user error.
             Printing.PrintT("Enter Valid Option!",'r',0);
             Console.WriteLine();
             Console.WriteLine("Your dealt cards so far.");
@@ -58,6 +55,4 @@ public class Test
 
         }
     }
-    //Easy exercise method.
-    
 }

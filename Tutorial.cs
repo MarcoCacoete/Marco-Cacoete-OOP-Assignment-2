@@ -2,9 +2,9 @@ namespace OOP_assignment_2;
 
 static class Tutorial
 {
-    //Class responsible for the greeting messages and the goodbye messages.
+    //Class responsible for the tutorial messages with instructions.
 
-    public static void Message(int choice)
+    public static void Message(int choice)  //Method calls to printing method for messages to user, these are printed in different colours. More info on printing method on printing class.
     {
        
             Printing.PrintT("Hi I'm the maths tutor, and I exist to help you be better at doing math!", 'b', 0);
