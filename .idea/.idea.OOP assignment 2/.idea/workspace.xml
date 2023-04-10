@@ -7,9 +7,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Licenses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/bin/Debug/net7.0/Licenses.txt" afterDir="false" />
+    <list default="true" id="437c8b01-0c2a-4441-809e-5b5a026afed9" name="Changes" comment="Did most error handling, found a problem when inputing user names with numbers mixed, it repeats a message call for some reason..">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOP assignment 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/bin/Debug/net7.0/Statistics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/OOP assignment 2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/OOP assignment 2.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +40,6 @@
         <entry key="$PROJECT_DIR$" value="Main" />
       </map>
     </option>
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///home/marco/Documents/OOP/Assessment 2/Assignment/Deal.cs" root0="SKIP_HIGHLIGHTING" />
@@ -41,32 +58,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.35947713&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/Statistics.txt&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.35947713",
+    "last_opened_file_path": "/home/marco/Documents/OOP/Assessment 2/Assignment/bin/Debug/net7.0/Statistics.txt",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\marco\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\marco\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\marco\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/home/marco/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/home/marco/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="OOP assignment 2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -107,6 +124,7 @@
       <workItem from="1680975944980" duration="6538000" />
       <workItem from="1680984150552" duration="9456000" />
       <workItem from="1680996993362" duration="3124000" />
+      <workItem from="1681152905084" duration="878000" />
     </task>
     <task id="LOCAL-00001" summary="First classes and methods created, greeting and goodbye messages created for testing using printing method with different colours.">
       <created>1680223596264</created>
@@ -199,14 +217,7 @@
       <option name="project" value="LOCAL" />
       <updated>1680982462275</updated>
     </task>
-    <task id="LOCAL-00014" summary="Did most error handling, found a problem when inputing user names with numbers mixed, it repeats a message call for some reason..">
-      <created>1681011039192</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1681011039192</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

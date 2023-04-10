@@ -80,18 +80,21 @@ public class User : IRegistration
         {
             Student student = new Student();
             student.Message();
+            return;
         }
 
         if (License == "2")
         {
             Professional professional = new Professional();
             professional.Message();
+            return;
         }
         
         if (License == "3")
         {
             Tester tester = new Tester();
             tester.Message();
+            return;
         }
         if (License == "4")
         {
@@ -120,12 +123,16 @@ public class User : IRegistration
                 Console.WriteLine();
                 Message();
             }
-            foreach(char i in Name)
-                if(!Char.IsLetter(i) &&  i != ' ' && !Char.IsPunctuation(i))
+
+            foreach (char i in Name)
             {
-                Printing.PrintT("No numerical values please!",'r',0);
-                Console.WriteLine();
-                Message();
+                if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
+                {
+                    Printing.PrintT("No numerical values please!", 'r', 0);
+                    Console.WriteLine();
+                    Message();
+                    return;
+                }
             }
 
             LicenseCheck();
@@ -178,13 +185,17 @@ public class User : IRegistration
                 Console.WriteLine();
                 Message();
             }
-            foreach(char i in Name)
-                if(!Char.IsLetter(i) &&  i != ' ' && !Char.IsPunctuation(i))
+
+            foreach (char i in Name)
+            {
+                if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
                 {
-                    Printing.PrintT("No numerical values please!",'r',0);
+                    Printing.PrintT("No numerical values please!", 'r', 0);
                     Console.WriteLine();
                     Message();
+                    return;
                 }
+            }
             LicenseType = "Tester";
             Register(Name);
             Test.UserName = Name;

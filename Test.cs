@@ -49,6 +49,12 @@ public class Test
         {
             Printing.PrintT("Enter Valid Option!",'r',0);
             Console.WriteLine();
+            Console.WriteLine("Your dealt cards so far.");
+            foreach (Card card in cards)
+            {
+                Console.WriteLine(card.ToString());     // Prints all dealt cards
+            }
+            Instructions(cards);
 
         }
     }
