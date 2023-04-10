@@ -7,30 +7,30 @@ public class Card
     //Value: numbers 1 - 13
     //Suit: numbers 1 - 4
 
-    private int cardValue;
+    private int _cardValue;
 
-    private int cardSuit;
+    private int _cardSuit;
 
     //constructor
 
     public Card(int value, int suit)
     {
-        cardValue = value;
-        cardSuit = suit;
+        _cardValue = value;
+        _cardSuit = suit;
         return; // Constructor returns ints for card value and suit as required by brief
     }
 
     public int Value
     {
-        get { return cardValue; }
-        set { cardValue = value; }
+        get { return _cardValue; }
+        set { _cardValue = value; }
     }
 
     // gets and sets setup to keep give access to private variables, reinforcing the idea of encapsulation
     public int Suit
     {
-        get { return cardSuit; }
-        set { cardSuit = value; }
+        get { return _cardSuit; }
+        set { _cardSuit = value; }
     }
 
     public override string

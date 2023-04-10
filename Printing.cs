@@ -4,42 +4,42 @@ namespace OOP_assignment_2;
 
 public static class Printing
 {
-    //This class is responsible for printing.
+    //This class is responsible for printing to console in three different colour options, it does this by changing foreground colour, printing the data then reverting back to white.
 
 
-    public static void PrintT(string text, char colour, int LineNoLine)
-    {
-        if (LineNoLine == 0)
-            printer(text, colour, LineNoLine);
+    public static void PrintT(string text, char colour, int lineNoLine) // The following 3 methods are entry points that carry arguments for options when printing.
+    {                                                                   // The char argument picks colour, the linenoline arguments, defines if something is printed on new line or not.
+        if (lineNoLine == 0)
+            Printer(text, colour, lineNoLine);
         else
         {
-            printer(text, colour, 1);
+            Printer(text, colour, 1);
         }
     }
 
-    public static void PrintN(int num, char colour, int LineNoLine)
+    public static void PrintN(int num, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
-            printer(num, colour, LineNoLine);
+        if (lineNoLine == 0)
+            Printer(num, colour, lineNoLine);
         else
         {
-            printer(num, colour, 1);
+            Printer(num, colour, 1);
         }
     }
 
-    public static void PrintD(double num, char colour, int LineNoLine)
+    public static void PrintD(double num, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
-            printer(num, colour, LineNoLine);
+        if (lineNoLine == 0)
+            Printer(num, colour, lineNoLine);
         else
         {
-            printer(num, colour, 1);
+            Printer(num, colour, 1);
         }
     }
 
-    private static void printer(string text, char colour, int LineNoLine)
-    {
-        if (LineNoLine == 0)
+    private static void Printer(string text, char colour, int lineNoLine) //Private methods for changing foreground colours for printing, one for text one for integers and one for doubles.
+    {                                                                     //Can easily add more colour options and data types as needed.
+        if (lineNoLine == 0)
         {
             if (colour == 'g')
             {
@@ -93,9 +93,9 @@ public static class Printing
         }
     }
 
-    private static void printer(int number, char colour, int LineNoLine)
+    private static void Printer(int number, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
+        if (lineNoLine == 0)
         {
 
             if (colour == 'g')
@@ -150,9 +150,9 @@ public static class Printing
         }
     }
 
-    private static void printer(double number, char colour, int LineNoLine)
+    private static void Printer(double number, char colour, int lineNoLine)
     {
-        if (LineNoLine == 0)
+        if (lineNoLine == 0)
         {
 
             if (colour == 'g')

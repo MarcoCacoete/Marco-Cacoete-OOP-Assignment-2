@@ -2,7 +2,6 @@
 
 using OOP_assignment_2;
 Pack pack = new Pack();  //  Creates a pack of ordered cards
- 
-Messages.Message(1);
-Pack.shuffleCardPack(1);
-Messages.Message(0);
+User.EnterDetails();     //Starts program sequence.
+Tutorial.Message(1);    //Calls message.
+Pack.ShuffleCardPack();       //Calls shuffle.
