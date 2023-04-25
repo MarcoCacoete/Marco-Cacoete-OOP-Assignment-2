@@ -27,13 +27,13 @@ public class User : IRegistration
     public void Register(string name)  //Method responsible for a few messages when registration of user is finished. this method is inherited by child classes below and overridden
     {                                  // to reflect differences between user types.
         Console.WriteLine();
-        Printing.PrintT("Nice to meet you ",'b',1);
-        Printing.PrintT(name,'g',1);
-        Printing.PrintT(".",'g',1);
+        Printing.Print("Nice to meet you ",'b',1);
+        Printing.Print(name,'g',1);
+        Printing.Print(".",'g',1);
         Console.WriteLine();
-        Printing.PrintT("You're now registered as a user, enjoy your experience.", 'b', 0);
+        Printing.Print("You're now registered as a user, enjoy your experience.", 'b', 0);
         Console.WriteLine();
-        Printing.PrintT("Press Enter to continue.", 'g', 0);
+        Printing.Print("Press Enter to continue.", 'g', 0);
         Console.ReadLine();
 
     }
@@ -41,7 +41,7 @@ public class User : IRegistration
     protected virtual void Message() // Virtual method to be used by classes, it assigns name license type and also Name variable in Test class.
     {
         User user = new User();
-        Printing.PrintT("Please register your name: ", 'g', 0);
+        Printing.Print("Please register your name: ", 'g', 0);
         user.Name = Console.ReadLine();
         user.LicenseType = "Default";
         user.Register(user.Name);
@@ -49,15 +49,15 @@ public class User : IRegistration
     }
     public static void EnterDetails()  //Initial Greeting and credentials entry method.
     {
-        Printing.PrintT("Welcome to the Math Tutor, please enter your details.", 'b', 0);
+        Printing.Print("Welcome to the Math Tutor, please enter your details.", 'b', 0);
         Console.WriteLine();
-        Printing.PrintT("Are you a student user or professional user?", 'b', 0); //Many options for user types and option to exit program.
+        Printing.Print("Are you a student user or professional user?", 'b', 0); //Many options for user types and option to exit program.
         Console.WriteLine();
-        Printing.PrintT("1: Student.", 'g', 0);
-        Printing.PrintT("2: Professional.", 'g', 0);
-        Printing.PrintT("3: Tester - Temporary test user.", 'r', 0);
+        Printing.Print("1: Student.", 'g', 0);
+        Printing.Print("2: Professional.", 'g', 0);
+        Printing.Print("3: Tester - Temporary test user.", 'r', 0);
         Console.WriteLine();
-        Printing.PrintT("4: Exit.", 'r', 0);
+        Printing.Print("4: Exit.", 'r', 0);
 
        
 
@@ -70,7 +70,7 @@ public class User : IRegistration
 
         if (!Check.Contains(License))  //Guard clause that prints instructions for user in case they entered wrong option, calls initial method recursively.
         {
-            Printing.PrintT("Enter Valid Option!",'r',0);
+            Printing.Print("Enter Valid Option!",'r',0);
             Console.WriteLine();
             EnterDetails();
         }
@@ -98,27 +98,24 @@ public class User : IRegistration
         if (License == "4")
         {
             Console.WriteLine();
-            Printing.PrintT("See ya Maths Wizard.",'r',0); //Friendly message printed in case user decides to exit program.
+            Printing.Print("See ya Maths Wizard.",'r',0); //Friendly message printed in case user decides to exit program.
             Environment.Exit(0);
         }
     }
 }
 
-    interface IRegistration    //Interface for register method, inherited by all user types.
-    {
-       protected void Register(string Name);
-    }
+    
 
     public class Professional : User, IRegistration  //Professional user type, inheriting methods from parent class and interface.
     {
         protected override void Message()           //Overriden message method from parent class, with changes for professional type user.
         {
             
-            Printing.PrintT("Please register your name: ", 'g', 0);  //It is similar to original method however has extra options.
+            Printing.Print("Please register your name: ", 'g', 0);  //It is similar to original method however has extra options.
             Name = Console.ReadLine();
             if (string.IsNullOrEmpty(Name))                                         //Guard clause to prevent null input.
             {
-                Printing.PrintT("Enter Valid name!",'r',0);
+                Printing.Print("Enter Valid name!",'r',0);
                 Console.WriteLine();
                 Message();
             }
@@ -127,7 +124,7 @@ public class User : IRegistration
             {
                 if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))     //Custom guard clause that prevents User name from having Numbers, allows punctuation and spaces for multiple
                 {                                                                // names and for honorifics like Dr. or Mr. Mrs.
-                    Printing.PrintT("No numerical values please!", 'r', 0);  //Both guard clauses call message method in case requisites aren't fulfilled.  
+                    Printing.Print("No numerical values please!", 'r', 0);  //Both guard clauses call message method in case requisites aren't fulfilled.  
                     Console.WriteLine();
                     Message();
                     return;
@@ -140,16 +137,16 @@ public class User : IRegistration
                 Console.WriteLine();
 
                 List<string> Licenses = File.ReadAllLines("Licenses.txt").ToList();  //This list includes the txt file strings with all valid keys.
-                Printing.PrintT("List of valid license numbers, printed for testing", 'r', 0); // This list of codes is only printed for testing purposes.
+                Printing.Print("List of valid license numbers, printed for testing", 'r', 0); // This list of codes is only printed for testing purposes.
                 foreach (string i in Licenses)
-                    Printing.PrintT(i, 'b', 0);
+                    Printing.Print(i, 'b', 0);
                 Console.WriteLine();
-                Printing.PrintT("Please insert 8 digit license number: ", 'g', 0); //Tells user to insert a valid 8 digit code.
+                Printing.Print("Please insert 8 digit license number: ", 'g', 0); //Tells user to insert a valid 8 digit code.
                 string RegistrationNo = Console.ReadLine();
 
                 if (!Licenses.Contains(RegistrationNo))                                             // Checks list to see if it contains the code, if not it recalls license check method.
                 {
-                    Printing.PrintT("Enter Valid License key!", 'r', 0);
+                    Printing.Print("Enter Valid License key!", 'r', 0);
                     LicenseCheck();
                 }
                 
@@ -161,13 +158,13 @@ public class User : IRegistration
         private void Register(string name)
         {
             Console.WriteLine();
-            Printing.PrintT("Nice to meet you ",'b',1);
-            Printing.PrintT(name,'g',1);
-            Printing.PrintT(".",'g',0);
+            Printing.Print("Nice to meet you ",'b',1);
+            Printing.Print(name,'g',1);
+            Printing.Print(".",'g',0);
             Console.WriteLine();
-            Printing.PrintT("You're now registered as a professional user, enjoy your pro license.", 'b', 0);
+            Printing.Print("You're now registered as a professional user, enjoy your pro license.", 'b', 0);
             Console.WriteLine();
-            Printing.PrintT("Press Enter to continue.", 'g', 0);
+            Printing.Print("Press Enter to continue.", 'g', 0);
             Console.ReadLine();
         }
     }
@@ -176,11 +173,11 @@ public class User : IRegistration
         protected override void Message()
         {
             
-            Printing.PrintT("Please register your name: ", 'g', 0);
+            Printing.Print("Please register your name: ", 'g', 0);
             Name = Console.ReadLine();
             if (string.IsNullOrEmpty(Name))
             {
-                Printing.PrintT("Enter Valid name!",'r',0);
+                Printing.Print("Enter Valid name!",'r',0);
                 Console.WriteLine();
                 Message();
             }
@@ -189,7 +186,7 @@ public class User : IRegistration
             {
                 if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
                 {
-                    Printing.PrintT("No numerical values please!", 'r', 0);
+                    Printing.Print("No numerical values please!", 'r', 0);
                     Console.WriteLine();
                     Message();
                     return;
@@ -198,19 +195,24 @@ public class User : IRegistration
             LicenseType = "Tester";
             Register(Name);
             Test.UserName = Name;
-            
+            Test.Tester();
+            Console.WriteLine();
+            Printing.Print("Tests executed successfully, the results matched the method's returned values.", 'b', 0);
+            Console.WriteLine();
+            Printing.Print("Press Enter to Continue.", 'g', 0);
+            Console.ReadLine();
         }
 
         private void Register(string name)
         {
             Console.WriteLine();
-            Printing.PrintT("Nice to meet you ",'b',1);
-            Printing.PrintT(name,'g',1);
-            Printing.PrintT(".",'g',1);
+            Printing.Print("Nice to meet you ",'b',1);
+            Printing.Print(name,'g',1);
+            Printing.Print(".",'g',1);
             Console.WriteLine();
-            Printing.PrintT("You're now registered as a tester, thanks for your help.", 'b', 0);
+            Printing.Print("You're now registered as a tester, thanks for your help.", 'b', 0);
             Console.WriteLine();
-            Printing.PrintT("Press Enter to continue.", 'g', 0);
+            Printing.Print("Press Enter to continue.", 'g', 0);
             Console.ReadLine();
 
         }
@@ -221,11 +223,11 @@ public class User : IRegistration
         protected override void Message()
         {
             
-            Printing.PrintT("Please register your name: ", 'g', 0);
+            Printing.Print("Please register your name: ", 'g', 0);
             Name = Console.ReadLine();
             if (string.IsNullOrEmpty(Name))
             {
-                Printing.PrintT("Enter Valid name!",'r',0);
+                Printing.Print("Enter Valid name!",'r',0);
                 Console.WriteLine();
                 Message();
             }
@@ -234,7 +236,7 @@ public class User : IRegistration
             {
                 if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
                 {
-                    Printing.PrintT("No numerical values please!", 'r', 0);
+                    Printing.Print("No numerical values please!", 'r', 0);
                     Console.WriteLine();
                     Message();
                     return;
@@ -249,13 +251,13 @@ public class User : IRegistration
         private void Register(string name)
         {
             Console.WriteLine();
-            Printing.PrintT("Nice to meet you ",'b',1);
-            Printing.PrintT(name,'g',1);
-            Printing.PrintT(".",'g',0);
+            Printing.Print("Nice to meet you ",'b',1);
+            Printing.Print(name,'g',1);
+            Printing.Print(".",'g',0);
             Console.WriteLine();
-            Printing.PrintT("You're registered as a student user, enjoy your free student license ", 'b', 0);
+            Printing.Print("You're registered as a student user, enjoy your free student license ", 'b', 0);
             Console.WriteLine();
-            Printing.PrintT("Press Enter to continue.", 'g', 0);
+            Printing.Print("Press Enter to continue.", 'g', 0);
             Console.ReadLine();
         }
     }

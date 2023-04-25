@@ -51,7 +51,7 @@ public class Deal
                     }
                     _dealtCards.Clear();
                     Deal.Dealer(2,5,cardPack);
-                    Printing.PrintT("Would you like to continue? (y/n)",'b',0);
+                    Printing.Print("Would you like to continue? (y/n)",'b',0);
                     choice = Console.ReadLine();
                 }
             }
