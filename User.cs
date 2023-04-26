@@ -113,25 +113,34 @@ public class User : IRegistration
     {
         protected override void Message()           //Overriden message method from parent class, with changes for professional type user.
         {
-            
-            Printing.Print("Please register your name: ", 'g', 0);  //It is similar to original method however has extra options.
-            Name = Console.ReadLine();
-            if (string.IsNullOrEmpty(Name))                                         //Guard clause to prevent null input.
-            {
-                Printing.Print("Enter Valid name!",'r',0);
-                Console.WriteLine();
-                Message();
-                return;
-            }
+            DataInput();
 
-            foreach (char i in Name)
+            void DataInput()
             {
-                if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))     //Custom guard clause that prevents User name from having Numbers, allows punctuation and spaces for multiple
-                {                                                                // names and for honorifics like Dr. or Mr. Mrs.
-                    Printing.Print("No numerical values please!", 'r', 0);  //Both guard clauses call message method in case requisites aren't fulfilled.  
+                Printing.Print("Please register your name: ", 'g',
+                    0); //It is similar to original method however has extra options.
+                Name = Console.ReadLine();
+                if (string.IsNullOrEmpty(Name)) //Guard clause to prevent null input.
+                {
+                    Printing.Print("Enter Valid name!", 'r', 0);
                     Console.WriteLine();
-                    Message();
+                    DataInput();
                     return;
+                }
+
+                foreach (char i in Name)
+                {
+                    if (!Char.IsLetter(i) && i != ' ' &&
+                        !Char.IsPunctuation(
+                            i)) //Custom guard clause that prevents User name from having Numbers, allows punctuation and spaces for multiple
+                    {
+                        // names and for honorifics like Dr. or Mr. Mrs.
+                        Printing.Print("No numerical values please!", 'r',
+                            0); //Both guard clauses call message method in case requisites aren't fulfilled.  
+                        Console.WriteLine();
+                        DataInput();
+                        return;
+                    }
                 }
             }
 
@@ -177,26 +186,31 @@ public class User : IRegistration
     {
         protected override void Message()
         {
-            
-            Printing.Print("Please register your name: ", 'g', 0);
-            Name = Console.ReadLine();
-            if (string.IsNullOrEmpty(Name))
+            DataInput();
+            void DataInput()
             {
-                Printing.Print("Enter Valid name!",'r',0);
-                Console.WriteLine();
-                Message();
+                Printing.Print("Please register your name: ", 'g', 0);
+                Name = Console.ReadLine();
+                if (string.IsNullOrEmpty(Name))
+                {
+                    Printing.Print("Enter Valid name!", 'r', 0);
+                    Console.WriteLine();
+                    DataInput();
+                }
+
+                foreach (char i in Name)
+                {
+                    if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
+                    {
+                        Printing.Print("No numerical values please!", 'r', 0);
+                        Console.WriteLine();
+                        DataInput();
+                        return;
+                    }
+                }
+                return;
             }
 
-            foreach (char i in Name)
-            {
-                if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
-                {
-                    Printing.Print("No numerical values please!", 'r', 0);
-                    Console.WriteLine();
-                    Message();
-                    return;
-                }
-            }
             LicenseType = "Tester";
             Register(Name);
             Test.UserName = Name;
@@ -224,25 +238,29 @@ public class User : IRegistration
     {
         protected override void Message()
         {
-            
-            Printing.Print("Please register your name: ", 'g', 0);
-            Name = Console.ReadLine();
-            if (string.IsNullOrEmpty(Name))
-            {
-                Printing.Print("Enter Valid name!",'r',0);
-                Console.WriteLine();
-                Message();
-                return;
-            }
+            DataInput();
 
-            foreach (char i in Name)
+            void DataInput()
             {
-                if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
+                Printing.Print("Please register your name: ", 'g', 0);
+                Name = Console.ReadLine();
+                if (string.IsNullOrEmpty(Name))
                 {
-                    Printing.Print("No numerical values please!", 'r', 0);
+                    Printing.Print("Enter Valid name!", 'r', 0);
                     Console.WriteLine();
-                    Message();
+                    DataInput();
                     return;
+                }
+
+                foreach (char i in Name)
+                {
+                    if (!Char.IsLetter(i) && i != ' ' && !Char.IsPunctuation(i))
+                    {
+                        Printing.Print("No numerical values please!", 'r', 0);
+                        Console.WriteLine();
+                        DataInput();
+                        return;
+                    }
                 }
             }
 
