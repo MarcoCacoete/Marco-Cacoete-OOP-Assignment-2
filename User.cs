@@ -73,34 +73,37 @@ public class User : IRegistration
             Printing.Print("Enter Valid Option!",'r',0);
             Console.WriteLine();
             EnterDetails();
+            return;
         }
 
-        if (License == "1")   // THe following conditionals create respective type of user.
+        else if (License == "1")   // THe following conditionals create respective type of user.
         {
             Student student = new Student();
             student.Message();
             return;
         }
 
-        if (License == "2")
+        else if (License == "2")
         {
             Professional professional = new Professional();
             professional.Message();
             return;
         }
         
-        if (License == "3")
+        else if (License == "3")
         {
             Tester tester = new Tester();
             tester.Message();
             return;
         }
-        if (License == "4")
+       else if (License == "4")
         {
             Console.WriteLine();
             Printing.Print("See ya Maths Wizard.",'r',0); //Friendly message printed in case user decides to exit program.
             Environment.Exit(0);
         }
+
+        return;
     }
 }
 
@@ -118,6 +121,7 @@ public class User : IRegistration
                 Printing.Print("Enter Valid name!",'r',0);
                 Console.WriteLine();
                 Message();
+                return;
             }
 
             foreach (char i in Name)
@@ -138,7 +142,7 @@ public class User : IRegistration
 
                 List<string> Licenses = File.ReadAllLines("Licenses.txt").ToList();  //This list includes the txt file strings with all valid keys.
                 Printing.Print("List of valid license numbers, printed for testing", 'r', 0); // This list of codes is only printed for testing purposes.
-                foreach (string i in Licenses)
+                foreach (string i in Licenses) 
                     Printing.Print(i, 'b', 0);
                 Console.WriteLine();
                 Printing.Print("Please insert 8 digit license number: ", 'g', 0); //Tells user to insert a valid 8 digit code.
@@ -148,11 +152,13 @@ public class User : IRegistration
                 {
                     Printing.Print("Enter Valid License key!", 'r', 0);
                     LicenseCheck();
+                    return;
                 }
                 
                 LicenseType = "Professional";   //Defines license type as professional.
                 Register(Name);                 //Calls registered message method.
                 Test.UserName = Name;
+                return;
             }
         }
         private void Register(string name)
@@ -164,8 +170,7 @@ public class User : IRegistration
             Console.WriteLine();
             Printing.Print("You're now registered as a professional user, enjoy your pro license.", 'b', 0);
             Console.WriteLine();
-            Printing.Print("Press Enter to continue.", 'g', 0);
-            Console.ReadLine();
+            return;
         }
     }
     public class Tester : User  //Same logic as student and pro user, but for temporary test user.
@@ -199,8 +204,7 @@ public class User : IRegistration
             Console.WriteLine();
             Printing.Print("Tests executed successfully, the results matched the method's returned values.", 'b', 0);
             Console.WriteLine();
-            Printing.Print("Press Enter to Continue.", 'g', 0);
-            Console.ReadLine();
+            return;
         }
 
         private void Register(string name)
@@ -212,9 +216,7 @@ public class User : IRegistration
             Console.WriteLine();
             Printing.Print("You're now registered as a tester, thanks for your help.", 'b', 0);
             Console.WriteLine();
-            Printing.Print("Press Enter to continue.", 'g', 0);
-            Console.ReadLine();
-
+            return;
         }
     }
 
@@ -230,6 +232,7 @@ public class User : IRegistration
                 Printing.Print("Enter Valid name!",'r',0);
                 Console.WriteLine();
                 Message();
+                return;
             }
 
             foreach (char i in Name)
@@ -246,6 +249,7 @@ public class User : IRegistration
             LicenseType = "Student";
             Register(Name);
             Test.UserName = Name;
+            return;
         }
 
         private void Register(string name)
@@ -257,8 +261,7 @@ public class User : IRegistration
             Console.WriteLine();
             Printing.Print("You're registered as a student user, enjoy your free student license ", 'b', 0);
             Console.WriteLine();
-            Printing.Print("Press Enter to continue.", 'g', 0);
-            Console.ReadLine();
+            return;
         }
     }
 

@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/marco/.nuget/packages/": {}
+    "C:\\Users\\marco\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/marco/Documents/OOP/Assessment 2/Assignment/OOP assignment 2.csproj",
+      "projectUniqueName": "C:\\Users\\marco\\Documents\\Programming\\OOP2\\OOP assignment 2.csproj",
       "projectName": "OOP assignment 2",
-      "projectPath": "/home/marco/Documents/OOP/Assessment 2/Assignment/OOP assignment 2.csproj",
-      "packagesPath": "/home/marco/.nuget/packages/",
-      "outputPath": "/home/marco/Documents/OOP/Assessment 2/Assignment/obj/",
+      "projectPath": "C:\\Users\\marco\\Documents\\Programming\\OOP2\\OOP assignment 2.csproj",
+      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marco\\Documents\\Programming\\OOP2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/marco/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\marco\\.dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

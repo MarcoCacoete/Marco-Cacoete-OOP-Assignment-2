@@ -21,7 +21,7 @@ public class Exercises
         if (option==2)
             HardExercise(dealtCards);
         if (option==3)
-            CustomExercise(dealtCards);
+            CustomExercise();
     }
     //Method for easy exercise.
     private static void EasyExercise(List<Card> dealtCards)
@@ -92,6 +92,7 @@ public class Exercises
             Console.WriteLine();
             EasyExercise(dealtCards);
         }
+        return;
     }
         //Hard exercise method.
     private static void HardExercise(List<Card> dealtCards)
@@ -172,78 +173,89 @@ public class Exercises
             Console.WriteLine();
             HardExercise(dealtCards);
         }
+        return;
     }
-    private static void CustomExercise(List<Card> dealtCards)
+    //Mostly the same exercise as hard exercise, the difference is the user can enter a custom string as a math expression with added parenthesis
+    private static void CustomExercise()
     {
-        string FirstNumber = Convert.ToString(dealtCards[0].Value);
-        string SecondNumber = Convert.ToString(dealtCards[2].Value);        //Same exact method as above, the only difference being the extra variables and operations for 5 cards instead of 3.
-        string ThirdNUmber = Convert.ToString(dealtCards[4].Value);
-        string Operator1 = "";
-        string Operator2 = "";
-        double Result = 0;
-        
-        Printing.Print("Enter your own exercise, or use calculator.",'b',0);
-
-        string expression = Console.ReadLine();
-        
-        Result = Math.Round(Convert.ToDouble(new DataTable().Compute(expression, null)),2);
-
-        Console.WriteLine();
-        Printing.Print("What is the result of this operation?", 'g', 0);            
-        foreach (char i in expression)
-        {
-            if (i == '*')
-                Printing.Print("x",'r',1);
-            else if (i == '-')
-                Printing.Print("-",'r',1);
-            else if (i == '+')
-                Printing.Print("+",'r',1);
-            else if (i == '/')
-                Printing.Print("/",'r',1);
-            else if (i == '(')
-                Printing.Print("(",'r',1);
-            else if (i == ')')
-                Printing.Print(")",'r',1);
-            else
-            {
-                Printing.Print(i,'b',1);
-            }
-
-        }
-        Console.WriteLine();
-        Printing.Print("This result is only shown for testing purposes. ",'r',0);
-        Printing.Print("Calculated answer: ",'b',1 );
-        Printing.Print(Result,'r',0);
         try
         {
-            double Answer = Math.Round(Convert.ToDouble(Console.ReadLine()), 2);
+            double Result = 0;
+            
+            Printing.Print("Enter your own exercise, or use calculator. Allowed Operators: ( ) - + * /.",'b',0);
 
-            if (Answer == Result)
+            string expression = Console.ReadLine();
+            
+            Result = Math.Round(Convert.ToDouble(new DataTable().Compute(expression, null)),2);
+            
+            ExpressionPrint();
+            
+            void ExpressionPrint()
             {
+                
+
                 Console.WriteLine();
-                Printing.Print("You answered correctly!", 'g', 0);
+                Printing.Print("What is the result of this operation?", 'g', 0);
                 Console.WriteLine();
-                CorrectQuestions++;
-                Statistics.Percentage(CorrectQuestions, WrongQuestions);
-                Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+                foreach (char i in expression)
+                {
+                    if (i == '*')
+                        Printing.Print("x", 'r', 1);
+                    else if (i == '-')
+                        Printing.Print("-", 'r', 1);
+                    else if (i == '+')
+                        Printing.Print("+", 'r', 1);
+                    else if (i == '/')
+                        Printing.Print("/", 'r', 1);
+                    else if (i == '(')
+                        Printing.Print("(", 'r', 1);
+                    else if (i == ')')
+                        Printing.Print(")", 'r', 1);
+                    else
+                    {
+                        Printing.Print(i, 'b', 1);
+                    }
+
+                }
+                Console.WriteLine();
             }
-            else
-            {
-                Console.WriteLine();
-                Printing.Print("Sorry your answer is wrong, try again.", 'g', 0);
-                WrongQuestions++;
-                Console.WriteLine();
-                Statistics.Percentage(CorrectQuestions, WrongQuestions);
-                HardExercise(dealtCards);
-                Console.WriteLine();
-                Total(TotalAttempts, CorrectQuestions, WrongQuestions);
-            }
+
+            Console.WriteLine();
+            Printing.Print("This result is only shown for testing purposes. ",'r',0);
+            Printing.Print("Calculated answer: ",'b',1 );
+            Printing.Print(Result,'r',0);
+            
+                double Answer = Math.Round(Convert.ToDouble(Console.ReadLine()), 2);
+
+                if (Answer == Result)
+                {
+                    Console.WriteLine();
+                    Printing.Print("You answered correctly!", 'g', 0);
+                    Console.WriteLine();
+                    CorrectQuestions++;
+                    Statistics.Percentage(CorrectQuestions, WrongQuestions);
+                    Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Printing.Print("Sorry your answer is wrong, try again.", 'g', 0);
+                    WrongQuestions++;
+                    Console.WriteLine();
+                    ExpressionPrint();
+                    Statistics.Percentage(CorrectQuestions, WrongQuestions);
+                    CustomExercise();
+                    Console.WriteLine();
+                    Total(TotalAttempts, CorrectQuestions, WrongQuestions);
+                }
         }
         catch
         {
-            Printing.Print("Enter Valid Option!",'r',0);
+            Printing.Print("Enter Valid math expression!",'r',0);
             Console.WriteLine();
-            HardExercise(dealtCards);
+            CustomExercise();
         }
+
+        return;
     }
 }

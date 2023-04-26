@@ -30,26 +30,34 @@ public class Test
             if (Difficulty == 1)                                                    //Calls for both exercise methods and exit program.
             {
                 Exercises.Difficulty(1,cards);
+                return;
             }
 
-            if (Difficulty == 2)
+            else if (Difficulty == 2)
             {
                 Exercises.Difficulty(2,cards);
+                return;
             }
             
-            if (Difficulty == 3)
+            else if (Difficulty == 3)
             {
                 Exercises.Difficulty(3,cards);
+                return;
             }
 
 
-            if (Difficulty == 4)        // This conditional option terminates the program gracefully, before doing so it makes calls to calculate statistics and writing results to a file.
+            else if (Difficulty == 4)        // This conditional option terminates the program gracefully, before doing so it makes calls to calculate statistics and writing results to a file.
             {                           // It also includes a friendly message directed at user before exiting program.
                 Exercises.TotalAttempts = Exercises.CorrectQuestions + Exercises.WrongQuestions; //Updates total attempts made so far.
                 Statistics.DataString(UserName, Statistics.Percentage(Exercises.CorrectQuestions, Exercises.WrongQuestions),Exercises.TotalAttempts);
                 Console.WriteLine();
                 Printing.Print("See ya Maths Wizard.",'r',0); //Friendly flavour message for user.
                 Environment.Exit(0);   //Exits program.
+            }
+            else
+            {
+                Printing.Print("Pick a valid option!",'r',0);
+                Instructions(cards);
             }
         }
         catch (Exception)
@@ -68,6 +76,7 @@ public class Test
     // Tester method called from User class to test the math exercise, using Debug Assertion.
    public static void Tester()
     {                                               // Creates a new hand of 5 cards and compares result with a pre established correct result.
+        Printing.Print("THIS IS A DEBUG ASSERTION TEST.",'r',0);
         List<Card> TestList = new List<Card>();
         Card card1 = new Card(5, 3);
         TestList.Add(card1);
