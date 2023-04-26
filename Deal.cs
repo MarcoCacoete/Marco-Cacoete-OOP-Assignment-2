@@ -35,12 +35,12 @@ public class Deal
 
                     amount--;                                   // Decrements counter
                 }
-                Console.WriteLine("Your dealt cards so far.");
+                /*Console.WriteLine("Your dealt cards so far.");
                 foreach (Card card in _dealtCards)
                 {
                     Console.WriteLine(card.ToString());     // Prints all dealt cards
                 }
-                Console.WriteLine();
+                */Console.WriteLine();
                 string choice = "n";
                 while (choice == "n")
                 {
@@ -51,7 +51,7 @@ public class Deal
                     }
                     _dealtCards.Clear();
                     Deal.Dealer(2,5,cardPack);
-                    Printing.PrintT("Would you like to continue? (y/n)",'b',0);
+                    Printing.Print("Would you like to continue? (y/n)",'b',0);
                     choice = Console.ReadLine();
                 }
             }

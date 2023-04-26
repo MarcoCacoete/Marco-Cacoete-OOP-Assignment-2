@@ -27,12 +27,12 @@ public class Pack
                         _cardPack.Add(new Card(suitCards, suit));      // Adds card objects to card list                     
                     }
                 }
-                foreach (Card card in _cardPack)
+               /* foreach (Card card in _cardPack)
                 {
                     Console.WriteLine(card);
                 }
                 Console.WriteLine("Your created pack above.");   // Prints pack
-                Console.WriteLine();
+               */ Console.WriteLine();
             }
         }
         // Creates random object
