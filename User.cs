@@ -202,7 +202,7 @@ public class User : IRegistration
             Test.UserName = Name;
             Test.Tester();
             Console.WriteLine();
-            Printing.Print("Tests executed successfully, the results matched the method's returned values.", 'b', 0);
+            Printing.Print("TESTS EXECUTED SUCCESSFULLY, CALCULATED RESULTS MATCH KNOWN ANSWER.", 'r', 0);
             Console.WriteLine();
             return;
         }
