@@ -215,9 +215,6 @@ public class User : IRegistration
             Register(Name);
             Test.UserName = Name;
             Test.Tester();
-            Console.WriteLine();
-            Printing.Print("TESTS EXECUTED SUCCESSFULLY, CALCULATED RESULTS MATCH KNOWN ANSWER.", 'r', 0);
-            Console.WriteLine();
             return;
         }
 

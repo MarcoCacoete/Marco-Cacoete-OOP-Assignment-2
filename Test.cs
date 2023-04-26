@@ -108,8 +108,14 @@ public class Test
         double Result2 =  TestExercise(TestList2);
         
         Debug.Assert(Result2== 8.5,"Test failed");
-
-
+        
+        double Result3 =  TestExercise();
+        
+        Debug.Assert(Result3== 8,"Test failed");
+        
+        Console.WriteLine();
+        Printing.Print("TESTS EXECUTED SUCCESSFULLY, CALCULATED RESULTS MATCH KNOWN ANSWER.", 'r', 0);
+        Console.WriteLine();
 
     }
    // This is a copy of the hard exercise method, edited down to be used in this testing environment, this version returns a double to be compared with pre established answer.
@@ -161,5 +167,54 @@ public class Test
         Printing.Print("Calculated answer: ",'b',1 );
         Printing.Print(Result, 'r', 0);
         return Result;
+    }
+    private static double TestExercise()
+    {
+       
+            double Result = 0;
+            
+            string expression = "(4-2)*4";
+            
+            Result = Math.Round(Convert.ToDouble(new DataTable().Compute(expression, null)),2);
+            
+            ExpressionPrint();
+            
+            void ExpressionPrint()
+            {
+                
+
+                Console.WriteLine();
+                Printing.Print("What is the result of this operation?", 'g', 0);
+                foreach (char i in expression)
+                {
+                    if (i == '*')
+                        Printing.Print("x", 'r', 1);
+                    else if (i == '-')
+                        Printing.Print("-", 'r', 1);
+                    else if (i == '+')
+                        Printing.Print("+", 'r', 1);
+                    else if (i == '/')
+                        Printing.Print("/", 'r', 1);
+                    else if (i == '(')
+                        Printing.Print("(", 'r', 1);
+                    else if (i == ')')
+                        Printing.Print(")", 'r', 1);
+                    else
+                    {
+                        Printing.Print(i, 'b', 1);
+                    }
+
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+            Printing.Print("This result is only shown for testing purposes. ",'r',0);
+            Printing.Print("Calculated answer: ",'b',1 );
+            Printing.Print(Result,'r',0);
+            
+
+
+        return Result ;
     }
 }
