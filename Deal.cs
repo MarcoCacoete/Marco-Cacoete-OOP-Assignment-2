@@ -7,7 +7,7 @@ public class Deal
         // Some objects are crated to be used by several methods
         private static Card _value;
 
-        public static void Dealer(int dealChoice, int amount,List<Card> cardPack)  // Small card dealing method added that accepts referals from testing class to access encapsulated methods
+        public static void Dealer(int dealChoice, int amount,List<Card> cardPack)  // Small card dealing method added that accepts referrals from testing class to access encapsulated methods
                                                                // depending on conditionals
         {
             if (dealChoice == 1)
@@ -51,8 +51,6 @@ public class Deal
                     }
                     _dealtCards.Clear();
                     Deal.Dealer(2,5,cardPack);
-                    Printing.Print("Would you like to continue? (y/n)",'b',0);
-                    choice = Console.ReadLine();
                 }
             }
             catch (Exception)
