@@ -8,7 +8,7 @@ public static class Printing
 
 
     public static void Print(string text, char colour, int lineNoLine) // The following 3 methods are entry points that carry arguments for options when printing.
-    {                                                                   // The char argument picks colour, the linenoline arguments, defines if something is printed on new line or not.
+    {                                                                   // The char argument picks colour, the line no line arguments, defines if something is printed on new line or not.
         if (lineNoLine == 0)
             Printer(text, colour, lineNoLine);
         else

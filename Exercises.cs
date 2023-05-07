@@ -195,7 +195,7 @@ public class Exercises
                 
 
                 Console.WriteLine();
-                Printing.Print("What is the result of this operation?", 'g', 0);
+                Printing.Print("What is the result of this operation?", 'g', 0); //Small block of code to print custom expression in same style as other exercises.
                 Console.WriteLine();
                 foreach (char i in expression)
                 {

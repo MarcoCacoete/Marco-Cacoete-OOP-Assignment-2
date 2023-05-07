@@ -12,7 +12,7 @@ public  class Statistics
     }
     public static double Percentage(double correct, double wrong) //This method calculates percentage of correct answer, it is used recursively every time user answers question.
     {
-        double Total = correct + wrong;                           // Updates total attemps counter.
+        double Total = correct + wrong;                           // Updates total attempts counter.
         double FinalPercentage = Math.Round((correct / Total)*100,1);   // Rounds percentage to 1 decimal place.
         Console.WriteLine("Percentage of correct answers: "+FinalPercentage+"%"); //Message printed after every answer.
         return FinalPercentage;
